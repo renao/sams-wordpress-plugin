@@ -9,52 +9,19 @@ class TableEntry {
     public $balls_pro;
     public $balls_con;
 
-    public function __construct(DOMNodeList $xml_nodes) {
-        $this->InitMap();
-
-        foreach ($xml_nodes as $node) {
-            $this->map_if_needed($node);
-        }
+    public function __construct(SimpleXMLElement $tableElement) {
+        $this->readValues($tableElement);
     }
 
-    private function map_if_needed(DOMElement $element) {
-        $nodeName = $element->tagName;
-
-        switch($element->tagName) {
-            case "platz":
-                $this->place = $element->nodeValue;
-                break;
-            case "team":
-                $this->team_name = $element->nodeValue;
-                break;
-            case "spiele":
-                $this->games = $element->nodeValue;
-                break;
-            case "plussaetze":
-                $this->sets_pro = $element->nodeValue;
-                break;
-            case "minussaetze":
-                $this->sets_con = $element->nodeValue;
-                break;
-            case "plusbaelle":
-                $this->balls_pro = $element->nodeValue;
-                break;
-            case "minusbaelle":
-                $this->balls_con = $element->nodeValue;
-                break;
-            case "dppunkte":
-                $this->points = $element->nodeValue;
-                break;
-        }
-    }
-
-    private $XmlPropertyMap;
-
-    private function InitMap() {
-        $this->XmlPropertyMap = [
-            "platz" => $this->place,
-            "team" => $this->team_name
-        ];
+    private function readValues(SimpleXMLElement $tableElement) {
+        $this->place = intval($tableElement->platz);
+        $this->team_name = (string) $tableElement->team;
+        $this->games = intval($tableElement->spiele);
+        $this->sets_pro = intval($tableElement->plussaetze);
+        $this->sets_con = intval($tableElement->minussaetze);
+        $this->balls_pro = intval($tableElement->plusbaelle);
+        $this->balls_con = intval($tableElement->minusbaelle);
+        $this->points = intval($tableElement->dppunkte);
     }
 }
 ?>
