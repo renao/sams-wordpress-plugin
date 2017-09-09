@@ -8,7 +8,7 @@ final class TableURITest extends TestCase {
 
         $division = "[some_division]";
         $season = "[some_season]";
-        $table_uri = new TableURI($season, $division);
+        $tableUri = new TableURI($season, $division);
 
         $expected 
             = "https://wvv.it4sport.de/data/vbnw/aufsteiger/public/tabelle_"
@@ -16,7 +16,7 @@ final class TableURITest extends TestCase {
             . "_"
             . $division
             . ".xml";
-        $this->assertEquals($expected, $table_uri->to_string());
+        $this->assertEquals($expected, $tableUri->toString());
     }
 
     public function testDoesNotAllowEmptySeason() {

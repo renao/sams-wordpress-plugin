@@ -9,8 +9,8 @@ final class WVVTableTest extends TestCase {
         $table = new WVVTable($tableXml);
 
         $this->assertEquals(2, count($table->tableEntries));
-        $this->assertEquals("SG Mondorf", $table->tableEntries[0]->team_name);
-        $this->assertEquals("TVA Fischenich II", $table->tableEntries[1]->team_name);
+        $this->assertEquals("SG Mondorf", $table->tableEntries[0]->teamName);
+        $this->assertEquals("TVA Fischenich II", $table->tableEntries[1]->teamName);
     }
 
     private $validXml = <<<XML

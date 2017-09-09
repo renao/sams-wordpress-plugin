@@ -9,11 +9,11 @@ final class TableEntryTest extends TestCase {
         $entry = new TableEntry($simpleXml);
 
         $this->assertEquals(1, $entry->place);
-        $this->assertEquals("TuS Herten Volleyball", $entry->team_name);
-        $this->assertEquals(12, $entry->sets_pro);
-        $this->assertEquals(1, $entry->sets_con);
-        $this->assertEquals(225, $entry->balls_pro);
-        $this->assertEquals(100, $entry->balls_con);
+        $this->assertEquals("TuS Herten Volleyball", $entry->teamName);
+        $this->assertEquals(12, $entry->setsPro);
+        $this->assertEquals(1, $entry->setsCon);
+        $this->assertEquals(225, $entry->ballsPro);
+        $this->assertEquals(100, $entry->ballsCon);
         $this->assertEquals(5, $entry->games);
         $this->assertEquals(13, $entry->points);
     }
