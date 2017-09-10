@@ -1,8 +1,11 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use WVVPlugin\Remote\XMLFetcher;
 
 final class XMLFetcherTest extends TestCase {
+
+
 
     /*
      * TODO: Mock XML URIs out here.

@@ -1,6 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use WVVPlugin\Models\TableEntry;
 
 final class TableEntryTest extends TestCase {
 

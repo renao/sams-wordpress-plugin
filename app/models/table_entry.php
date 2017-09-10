@@ -1,4 +1,7 @@
 <?php
+
+namespace WVVPlugin\Models;
+
 class TableEntry {
     public $place;
     public $teamName;
@@ -9,11 +12,11 @@ class TableEntry {
     public $ballsPro;
     public $ballsCon;
 
-    public function __construct(SimpleXMLElement $tableElement) {
+    public function __construct(\SimpleXMLElement $tableElement) {
         $this->readValues($tableElement);
     }
 
-    private function readValues(SimpleXMLElement $tableElement) {
+    private function readValues(\SimpleXMLElement $tableElement) {
         $this->place = intval($tableElement->platz);
         $this->teamName = (string) $tableElement->team;
         $this->games = intval($tableElement->spiele);

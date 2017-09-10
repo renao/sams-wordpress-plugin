@@ -1,4 +1,10 @@
 <?php
+namespace WVVPlugin;
+
+use WVVPlugin\Remote\URIs\TableURI;
+use WVVPlugin\Remote\XMLFetcher;
+use WVVPlugin\Models\WVVTable;
+use WVVPlugin\Presenters\TablePresenter;
 
 class RenderTable {
 

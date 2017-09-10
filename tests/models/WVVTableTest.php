@@ -1,6 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use WVVPlugin\Models\WVVTable;
 
 final class WVVTableTest extends TestCase {
 

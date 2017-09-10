@@ -1,6 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use WVVPlugin\Remote\URIs\TableURI;
 
 final class TableURITest extends TestCase {
 

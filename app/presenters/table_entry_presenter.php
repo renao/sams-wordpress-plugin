@@ -1,5 +1,9 @@
 <?php
 
+namespace WVVPlugin\Presenters;
+
+use WVVPlugin\Models\TableEntry;
+
 class TableEntryPresenter {
 
     public static function render(TableEntry $tableEntry) {

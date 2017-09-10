@@ -1,5 +1,7 @@
 <?php
 
+namespace WVVPlugin\Remote\URIs;
+
 class TableURI {
 
     private $season;
@@ -17,7 +19,7 @@ class TableURI {
 
     private function validateArguments($seasonId, $divisionId) {
         if (($seasonId == null) || ($divisionId == null)) {
-            throw new InvalidArgumentException("SEASON ID and DIVISION ID cannot be NULL");
+            throw new \InvalidArgumentException("SEASON ID and DIVISION ID cannot be NULL");
         }
     }
 }
