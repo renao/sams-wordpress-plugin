@@ -1,12 +1,12 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use WVVPlugin\RenderTable;
+use WVVPlugin\WVVTableRenderer;
 
 final class RenderTableInvokeTest extends TestCase {
 
     public function testTryTheFullStack() {
-        RenderTable::render();
+        echo WVVTableRenderer::fetchAndRender("2017", "201797");
     }
 }
 
