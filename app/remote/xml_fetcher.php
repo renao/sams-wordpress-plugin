@@ -5,8 +5,8 @@ namespace WVVPlugin\Remote;
 class XMLFetcher {
 
     public function fetch($xmlUri) {
-        // $xml = simplexml_load_file($xmlUri);
-        return new \SimpleXMLElement($xmlUri, null, true);
+        $xmlContent = file_get_contents($xmlUri);
+        return simplexml_load_string($xmlContent);
     }
 }
 ?>
