@@ -20,8 +20,8 @@ class TableEntryPresenter {
             $tableEntry->place,
             $tableEntry->teamName,
             $tableEntry->games,
-            TableEntryPresenter::getFormattedSets($tableEntry),
             TableEntryPresenter::getFormattedBalls($tableEntry),
+            TableEntryPresenter::getFormattedSets($tableEntry),
             $tableEntry->points
         );
     }
