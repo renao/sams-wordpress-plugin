@@ -59,6 +59,22 @@ final class FixturesEntryTest extends TestCase {
         $entry->scoreAway = 3;
         $this->assertTrue($entry->hasResult());
     }
+
+    public function testclubParticipates() {
+        $entry = new FixturesEntry(new SimpleXMLElement($this->emptyElement));
+
+        $lookup = "some club";
+        $this->assertFalse($entry->clubParticipates($lookup));
+
+        $entry->teamHome = "some other club";
+        $entry->teamAway = "another one";
+
+        $this->assertFalse($entry->clubParticipates($lookup));
+
+        $entry->teamAway = $lookup;
+
+        $this->assertTrue($entry->clubParticipates($lookup));
+    }
     
     private $emptyElement = <<<XML
     <element/>
