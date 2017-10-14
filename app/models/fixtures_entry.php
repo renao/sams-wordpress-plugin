@@ -20,11 +20,15 @@ class FixturesEntry {
     }
 
     public function hasResult() {
-        return $this->scoreHome != 0 && $this->scoreAway != 0;
+        return isset($this->scoreHome)
+            && isset($this->scoreAway)
+            && ($this->scoreHome != 0 
+                || $this->scoreAway != 0);
     }
 
     public function clubParticipates(string $clubname) {
-        return $this->teamHome == $clubname || $this->teamAway == $clubname;
+        return $this->teamHome == $clubname
+            || $this->teamAway == $clubname;
     }
 
     private function readValues(\SimpleXMLElement $fixtureElement) {

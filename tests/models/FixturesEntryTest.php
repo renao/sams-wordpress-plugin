@@ -39,6 +39,31 @@ final class FixturesEntryTest extends TestCase {
         $this->assertEquals("Sporthalle Am Bollwerk, Geldern", $entry->venue);
     }
 
+    public function testHasResult() {
+        $entry = new FixturesEntry(new SimpleXMLElement($this->emptyElement));
+        // scores not set.
+        $this->assertFalse($entry->hasResult());
+
+        // score's all zero.
+        $entry->scoreHome = 0;
+        $entry->scoreAway = 0;
+        $this->assertFalse($entry->hasResult());
+
+        // one score tie is zero
+        $entry->scoreHome = 0;
+        $entry->scoreAway = 3;
+        $this->assertTrue($entry->hasResult());
+
+        // valid score.
+        $entry->scoreHome = 2;
+        $entry->scoreAway = 3;
+        $this->assertTrue($entry->hasResult());
+    }
+    
+    private $emptyElement = <<<XML
+    <element/>
+XML;
+
     private $withResultXml = <<<XML
     <element>
         <nr>4</nr>
