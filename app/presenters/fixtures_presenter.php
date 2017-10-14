@@ -6,7 +6,7 @@ use WVVPlugin\Models\WVVFixtures;
 
 class FixturesPresenter {
 
-    public static function render(WVVFixtures $fixtures, string $club) {
+    public static function render(WVVFixtures $fixtures, $club) {
         $htmlBody = file_get_contents(__DIR__ . "/../templates/fixtures.html");
 
         if (count($fixtures->fixturesEntries > 0)) {

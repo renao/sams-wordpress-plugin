@@ -26,7 +26,7 @@ class FixturesEntry {
                 || $this->scoreAway != 0);
     }
 
-    public function clubParticipates(string $clubname) {
+    public function clubParticipates($clubname) {
         return $this->teamHome == $clubname
             || $this->teamAway == $clubname;
     }
