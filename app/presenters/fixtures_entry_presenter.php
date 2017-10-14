@@ -17,15 +17,12 @@ class FixturesEntryPresenter {
 
     private static function getFormattedEntryValues($fixtureEntry) {
         return array(
-            FixturesEntryPresenter::getFormattedDateTime($fixtureEntry),
+            $fixtureEntry->date,
+            $fixtureEntry->startTime,
             FixturesEntryPresenter::getFormattedFixtureName($fixtureEntry),
             $fixtureEntry->venue,
             FixturesEntryPresenter::getFormattedResult($fixtureEntry)
         );
-    }
-
-    private static function getFormattedDateTime($fixtureEntry) {
-        return $fixtureEntry->date . " " . $fixtureEntry->startTime . " Uhr";
     }
 
     private static function getFormattedFixtureName($fixtureEntry) {
@@ -34,12 +31,13 @@ class FixturesEntryPresenter {
 
     private static function getFormattedResult($fixtureEntry) {
         return ($fixtureEntry->hasResult())
-            ? $fixtureEntry->scoreHome . ":" . $fixtureEntry->scoreAway
-            : "-:-";
+            ? "(" . $fixtureEntry->scoreHome . ":" . $fixtureEntry->scoreAway . ")"
+            : "";
     }
 
     private static $entryTemplateKeys = array(
-        "{{%datetime}}",
+        "{{%date}}",
+        "{{%time}}",
         "{{%fixtureName}}",
         "{{%venue}}",
         "{{%gameResult}}"
