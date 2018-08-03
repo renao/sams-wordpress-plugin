@@ -3,10 +3,11 @@
 ## Features
 
 * Shortcode for WVV table integration
+* Shortcode for WVV fixtures integration
 
 ## Context
 
-The regional german volleyball confederation WVV (Westdeutscher Volleyballverband) provides an XML API for their league management tool "Aufsteiger".
+The regional german volleyball confederation WVV (Westdeutscher Volleyballverband) provides an XML API for their league management tool `Aufsteiger`.
 
 After years of maintaining sports-related websites, gathering the experience that there is nothing more boring than updating results, fixtures and standings, I forced myself to head straight into WordPress plugin development and PHP.
 
@@ -30,7 +31,18 @@ After activating the plugin succesfully,you can place a table to a certain point
 [wvvtable season="2017" division="201797"]
 ```
 
+### Integrate a WVV fixture into your WordPress content
+
+You can place fixtures for a certain division and team using the `wvvfixtures` shortcode with a `season` id and a `division` id, and a name of a `club`:
+
+``` php
+[wvvfixtures season="2017" division="201781" club="TuS Herten II"]
+```
+
+### Obtaining WVV division and season ids
+
 Currently the WVV provides the division ids (`staffel ids` inside the document) on their [Ergebnisdienst](https://www.volleyball.nrw/spielwesen/phoenixaufsteiger/ergebnisdienst/) page, or [click here](https://www.volleyball.nrw/fileadmin/spielwesen/Downloads/staffel_id_2017-18.pdf) to get directly to the list.
+
 
 ## License
 
