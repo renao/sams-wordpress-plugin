@@ -12,7 +12,7 @@ final class FixturesPresenterTest extends TestCase {
         $rendered = FixturesPresenter::render($fixtures, "TuS Herten");
         $rawTemplate = file_get_contents(__DIR__ . "/../../app/templates/fixtures.html");
 
-        $this->assertNotNull($rendered);
+        $this->assertNull($rendered);
         $this->assertNotEquals($rawTemplate, $rendered);
     }
 }
