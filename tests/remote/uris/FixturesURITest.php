@@ -1,35 +1,43 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use WVVPlugin\Remote\URIs\FixturesURI;
+use SAMSPlugin\Remote\URIs\FixturesURI;
 
 final class FixturesURITest extends TestCase {
 
     public function testComposeFixturesXMLURI() {
 
-        $division = "[some_division]";
-        $season = "[some_season]";
-        $fixturesUri = new FixturesURI($season, $division);
+        $apiKey = "[some_api_key]";
+        $matchSeriesId="[some_match_series_id]";
+        $teamId = "[some_team_id]";
+        $fixturesUri = new FixturesURI($apiKey, $matchSeriesId, $teamId);
 
-        $expected 
-            = "https://wvv.it4sport.de/data/vbnw/aufsteiger/public/spielplan_"
-            . $season
-            . "_"
-            . $division
-            . ".xml";
-        $this->assertEquals($expected, $fixturesUri->toString());
+        $expected
+            = "https://dvv.sams-server.de/xml/matches.xhtml?apiKey="
+            . $apiKey 
+            . "&matchSeriesId="
+            . $matchSeriesId
+            . "&teamId="
+            . $teamId;
+            $this->assertEquals($expected, $fixturesUri->toString());
     }
 
-    public function testDoesNotAllowEmptySeason() {
+    public function testDoesNotAllowEmptyApiKey() {
         $this->expectException(InvalidArgumentException::class);
 
-        new FixturesURI(null, "some division");
+        new FixturesURI(null, "some match series", "some team");
+    }
+
+    public function testDoesNotAllowEmptyMatchSeriesId() {
+        $this->expectException(InvalidArgumentException::class);
+
+        new FixturesURI("some api key", null, "some team");
     }
 
     public function testDoesNotAllowEmptyDivision() {
         $this->expectException(InvalidArgumentException::class);
 
-        new FixturesURI("some season", null);
+        new FixturesURI("some api key", "some match series", null);
     }
 }
 

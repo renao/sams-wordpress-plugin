@@ -1,25 +1,32 @@
 <?php
 
-namespace WVVPlugin\Remote\URIs;
+namespace SAMSPlugin\Remote\URIs;
 
 class FixturesURI {
 
-    private $season;
-    private $division;
+    private $apiKey;
+    private $matchSeriesId;
+    private $teamId;
 
-    public function __construct($seasonId, $divisionId) {
-        $this->validateArguments($seasonId, $divisionId);
-        $this->season = $seasonId;
-        $this->division = $divisionId;
+    public function __construct($apiKey, $matchSeriesId, $teamId) {
+        $this->validateArguments($apiKey, $matchSeriesId, $teamId);
+        $this->apiKey = $apiKey;
+        $this->matchSeriesId = $matchSeriesId;
+        $this->teamId = $teamId;
     }
 
     public function toString() {
-        return "https://wvv.it4sport.de/data/vbnw/aufsteiger/public/spielplan_" . $this->season . "_" . $this->division . ".xml";
+        return "https://dvv.sams-server.de/xml/matches.xhtml?apiKey=" 
+        . $this->apiKey 
+        ."&matchSeriesId=" 
+        . $this->matchSeriesId 
+        ."&teamId=" 
+        . $this->teamId;
     }
 
-    private function validateArguments($seasonId, $divisionId) {
-        if (($seasonId == null) || ($divisionId == null)) {
-            throw new \InvalidArgumentException("SEASON ID and DIVISION ID cannot be NULL");
+    private function validateArguments($apiKey, $matchSeriesId, $teamId) {
+        if (($apiKey == null) || ($matchSeriesId == null) || ($teamId == null)) {
+            throw new \InvalidArgumentException("API-Key, MatchSeriesId and TeamID cannot be NULL");
         }
     }
 }
