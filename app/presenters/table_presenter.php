@@ -9,7 +9,7 @@ class TablePresenter {
     public static function render(WVVTable $table) {
         $htmlBody = file_get_contents(__DIR__ . "/../templates/table.html");
 
-        if (count($table->tableEntries > 0)) {
+        if (count($table->tableEntries) > 0) {
             $entriesHtml = "";
             foreach ($table->tableEntries as $entry) {
                 $entriesHtml .= TableEntryPresenter::render($entry);

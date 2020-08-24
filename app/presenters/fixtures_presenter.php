@@ -9,7 +9,7 @@ class FixturesPresenter {
     public static function render(WVVFixtures $fixtures, $club) {
         $htmlBody = file_get_contents(__DIR__ . "/../templates/fixtures.html");
 
-        if (count($fixtures->fixturesEntries > 0)) {
+        if (count($fixtures->fixturesEntries) > 0) {
             $entriesHtml = "";
             foreach ($fixtures->fixturesEntries as $entry) {
                 if (isset($club) && $entry->clubParticipates($club)) {
