@@ -34,7 +34,7 @@ final class FixturesEntryTest extends TestCase {
         $this->assertEquals(0, $entry->scoreHome);
         $this->assertEquals(0, $entry->scoreAway);
         $this->assertEquals(null, $entry->setResults);
-        $this->assertEquals("Knappenhalle (Paschenbergstr. 95, 45699 Herten)", $entry->venue);
+        $this->assertEquals("Knappenhalle<br>Paschenbergstr. 95<br>45699 Herten", $entry->venue);
     }
 
     public function testHasResult() {

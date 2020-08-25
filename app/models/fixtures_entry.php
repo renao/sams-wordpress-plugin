@@ -40,13 +40,12 @@ class FixturesEntry {
 
     private function composeLocationName($locationNode) {
         return $locationNode->name 
-        . " (" 
+        . "<br>" 
         . $locationNode->street
-        . ", "
+        . "<br>"
         . $locationNode->postalCode
         . " "
-        . $locationNode->city
-        . ")";
+        . $locationNode->city;
     }
 }
 ?>
