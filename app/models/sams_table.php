@@ -1,13 +1,15 @@
 <?php
 
-namespace WVVPlugin\Models;
+namespace SAMSPlugin\Models;
 
-class WVVTable {
+class SAMSTable {
     public $tableEntries = [];
 
     public function __construct(\SimpleXMLElement $tableXml) {
         foreach ($tableXml->children() as $elementName => $elementNode) {
-            array_push($this->tableEntries, $this->createEntry($elementNode));
+            if ($elementNode->getName() == "ranking") {
+                array_push($this->tableEntries, $this->createEntry($elementNode));
+            }
         }
     }
 

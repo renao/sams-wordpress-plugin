@@ -1,8 +1,8 @@
 <?php
 
-namespace WVVPlugin\Presenters;
+namespace SAMSPlugin\Presenters;
 
-use WVVPlugin\Models\TableEntry;
+use SAMSPlugin\Models\TableEntry;
 
 class TableEntryPresenter {
 

@@ -1,27 +1,23 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use SAMSPlugin\Models\FixturesEntry;
-use SAMSPlugin\Presenters\FixturesEntryPresenter;
+use SAMSPlugin\Models\SAMSFixtures;
 
-final class FixturesEntryPresenterTest extends TestCase {
+final class SAMSFixturesTest extends TestCase {
 
-    public function testRendersFixturesEntryHtmlFromTemplate() {
-        $entry = new TestFixturesEntry();
+    public function testCreateAndFillEntries() {
+        $fixturesXml = new SimpleXmlElement($this->validXml);
+        $fixtures = new SAMSFixtures($fixturesXml);
 
-        $rendered = FixturesEntryPresenter::render($entry);
-        $rawTemplate = file_get_contents(__DIR__ . "/../../app/templates/__fixtures_entry.html");
-
-        $this->assertNotNull($rendered);
-        $this->assertNotEquals($rawTemplate, $rendered);
+        $this->assertEquals(2, count($fixtures->fixturesEntries));
+        $this->assertEquals("TuS Herten", $fixtures->fixturesEntries[0]->teamHome);
+        $this->assertEquals("TuS Herten Volleyball", $fixtures->fixturesEntries[1]->teamHome);
     }
-}
 
-class TestFixturesEntry extends FixturesEntry {
-    
-        public function __construct() {
-            parent::__construct(new SimpleXMLElement(<<<XML
-            <match>
+    private $validXml = <<<XML
+<?xml version="1.0" encoding="UTF-8"?>
+<matches xmlns="http://sams-server.de/api/xml/ns/matches" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://sams-server.de/api/xml/ns/matches matches.xsd">
+<match>
 <id>22089353</id>
 <uuid>63e8b2bf-5d69-4b94-8db9-703cbb5f0d92</uuid>
 <number>1</number>
@@ -120,11 +116,63 @@ class TestFixturesEntry extends FixturesEntry {
 </location>
 <referees> </referees>
 </match>
-            
-XML
-            ));
-        }
-    }
+<match>
+<id>22089503</id>
+<uuid>5acf6403-3e0a-4a73-a1e3-3cdbdaa6aa4a</uuid>
+<number>71</number>
+<date>20.09.2020</date>
+<time>17:00</time>
+<delayPossible>true</delayPossible>
+<decidingMatch>false</decidingMatch>
+<indefinitelyRescheduled>false</indefinitelyRescheduled>
+<host>
+<id>21416933</id>
+<uuid>9db5cbb6-22d1-4b61-8448-6c3041b28f1e</uuid>
+<name>TuS Herten</name>
+<club>TuS Herten</club>
+</host>
+<team>
+<number>1</number>
+<id>21416933</id>
+<uuid>9db5cbb6-22d1-4b61-8448-6c3041b28f1e</uuid>
+<seasonTeamId>21416933</seasonTeamId>
+<name>TuS Herten Volleyball</name>
+<shortName>TuS Herten</shortName>
+<clubCode>TUSH</clubCode>
+<club>
+<name>TuS Herten</name>
+<shortName>TuSH</shortName>
+</club>
+</team>
+<team>
+<number>2</number>
+<id>21979465</id>
+<uuid>0233ecfe-571b-4af3-ae21-2f4220beaef9</uuid>
+<seasonTeamId>21979465</seasonTeamId>
+<name>SV Wachtberg</name>
+<shortName>Wachtberg</shortName>
+<clubCode>SVW</clubCode>
+<club>
+<name>SV Wachtberg</name>
+<shortName/>
+</club>
+</team>
+<matchSeries>
+</matchSeries>
+<location>
+<id>15140213</id>
+<name>Knappenhalle</name>
+<street>Paschenbergstr. 95</street>
+<extraField>-</extraField>
+<postalCode>45699</postalCode>
+<city>Herten</city>
+<note>-</note>
+</location>
+<referees> </referees>
+</match>
+</matches>
 
+XML;
+}
 
 ?>

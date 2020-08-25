@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use WVVPlugin\Models\TableEntry;
+use SAMSPlugin\Models\TableEntry;
 
 final class TableEntryTest extends TestCase {
 
@@ -9,8 +9,8 @@ final class TableEntryTest extends TestCase {
         $simpleXml = new SimpleXMLElement($this->validXml);
         $entry = new TableEntry($simpleXml);
 
-        $this->assertEquals(1, $entry->place);
-        $this->assertEquals("TuS Herten Volleyball", $entry->teamName);
+        $this->assertEquals(4, $entry->place);
+        $this->assertEquals("TuS Herten", $entry->teamName);
         $this->assertEquals(12, $entry->setsPro);
         $this->assertEquals(1, $entry->setsCon);
         $this->assertEquals(225, $entry->ballsPro);
@@ -20,31 +20,60 @@ final class TableEntryTest extends TestCase {
     }
 
     private $validXml = <<<XML
-            <element>
-                <platz>1</platz>
-                <team>TuS Herten Volleyball</team>
-                <spiele>5</spiele>
-                <plussaetze>12</plussaetze>
-                <minussaetze>1</minussaetze>
-                <plusbaelle>225</plusbaelle>
-                <minusbaelle>100</minusbaelle>
-                <dppunkte>13</dppunkte>
-                <dpplatz>1</dpplatz>
-                <dpsiege>15</dpsiege>
-                <dpniederlagen>3</dpniederlagen>
-                <dpgewinn3031>14</dpgewinn3031>
-                <dpgewinn30>7</dpgewinn30>
-                <dpgewinn31>7</dpgewinn31>
-                <dpgewinn32>1</dpgewinn32>
-                <dpgewinn20>0</dpgewinn20>
-                <dpgewinn21>0</dpgewinn21>
-                <dpniederlage1303>2</dpniederlage1303>
-                <dpniederlage03>1</dpniederlage03>
-                <dpniederlage13>1</dpniederlage13>
-                <dpniederlage23>1</dpniederlage23>
-                <dpniederlage12>0</dpniederlage12>
-                <dpniederlage02>0</dpniederlage02>
-            </element>
+<ranking>
+    <team>
+        <id>21416933</id>
+        <uuid>9db5cbb6-22d1-4b61-8448-6c3041b28f1e</uuid>
+        <name>TuS Herten</name>
+        <shortName>TuS Herten</shortName>
+        <clubCode>TUSH</clubCode>
+        <club>
+            <name>TuS Herten</name>
+            <shortName>TuSH</shortName>
+        </club>
+    </team>
+    <place>4</place>
+    <matchesPlayed>5</matchesPlayed>
+    <wins>0</wins>
+    <losses>0</losses>
+    <points>13</points>
+    <setPoints>0:0</setPoints>
+    <setWinScore>12</setWinScore>
+    <setLoseScore>1</setLoseScore>
+    <setPointDifference>0</setPointDifference>
+    <setQuotient>∞</setQuotient>
+    <ballPoints>0:0</ballPoints>
+    <ballWinScore>225</ballWinScore>
+    <ballLoseScore>100</ballLoseScore>
+    <ballPointDifference>0</ballPointDifference>
+    <ballQuotient>∞</ballQuotient>
+    <resultTypes>
+        <matchResult>
+            <result>3:0</result>
+            <count>0</count>
+        </matchResult>
+        <matchResult>
+            <result>3:1</result>
+            <count>0</count>
+        </matchResult>
+        <matchResult>
+            <result>3:2</result>
+            <count>0</count>
+        </matchResult>
+        <matchResult>
+            <result>2:3</result>
+            <count>0</count>
+        </matchResult>
+        <matchResult>
+            <result>1:3</result>
+            <count>0</count>
+        </matchResult>
+        <matchResult>
+            <result>0:3</result>
+            <count>0</count>
+        </matchResult>
+    </resultTypes>
+</ranking>
 XML;
 }
 

@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use WVVPlugin\Remote\XMLFetcher;
+use SAMSPlugin\Remote\XMLFetcher;
 
 final class XMLFetcherTest extends TestCase {
 

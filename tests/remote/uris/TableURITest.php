@@ -1,35 +1,34 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use WVVPlugin\Remote\URIs\TableURI;
+use SAMSPlugin\Remote\URIs\TableURI;
 
 final class TableURITest extends TestCase {
 
     public function testComposeTableXMLURI() {
 
-        $division = "[some_division]";
-        $season = "[some_season]";
-        $tableUri = new TableURI($season, $division);
+        $seriesId = "[some_match_series]";
+        $apiKey = "[some_season]";
+        $tableUri = new TableURI($apiKey, $seriesId);
 
         $expected 
-            = "https://wvv.it4sport.de/data/vbnw/aufsteiger/public/tabelle_"
-            . $season
-            . "_"
-            . $division
-            . ".xml";
+            = "https://dvv.sams-server.de/xml/rankings.xhtml?apiKey="
+            . $apiKey
+            . "&matchSeriesId="
+            . $seriesId;
         $this->assertEquals($expected, $tableUri->toString());
     }
 
-    public function testDoesNotAllowEmptySeason() {
+    public function testDoesNotAllowEmptyApiKey() {
         $this->expectException(InvalidArgumentException::class);
 
-        new TableURI(null, "some division");
+        new TableURI(null, "some match series");
     }
 
-    public function testDoesNotAllowEmptyDivision() {
+    public function testDoesNotAllowEmptyMatchSeriesId() {
         $this->expectException(InvalidArgumentException::class);
 
-        new TableURI("some season", null);
+        new TableURI("some api key", null);
     }
 }
 

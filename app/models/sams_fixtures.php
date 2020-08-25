@@ -1,8 +1,8 @@
 <?php
 
-namespace WVVPlugin\Models;
+namespace SAMSPlugin\Models;
 
-class WVVFixtures {
+class SAMSFixtures {
     public $fixturesEntries = [];
 
     public function __construct(\SimpleXMLElement $fixturesXml) {

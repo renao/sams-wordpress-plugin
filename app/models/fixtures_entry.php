@@ -1,12 +1,10 @@
 <?php
 
-namespace WVVPlugin\Models;
+namespace SAMSPlugin\Models;
 
 class FixturesEntry {
-    public $number;
     public $matchday;
     public $date;
-    public $openingTime;
     public $startTime;
     public $teamHome;
     public $teamAway;
@@ -26,23 +24,28 @@ class FixturesEntry {
                 || $this->scoreAway != 0);
     }
 
-    public function clubParticipates($clubname) {
-        return $this->teamHome == $clubname
-            || $this->teamAway == $clubname;
+    private function readValues(\SimpleXMLElement $fixtureElement) {
+        $this->matchday = (string) $fixtureElement->number;
+        $this->date = (string) $fixtureElement->date;
+        $this->startTime = (string) $fixtureElement->time;
+        // $this->scoreHome = intval($fixtureElement->sheim);
+        // $this->scoreAway = intval($fixtureElement->sgast);
+        // $this->setResults = (string) $fixtureElement->result;
+        $this->venue = (string) $fixtureElement->halle;
+        $this->teamHome = (string) $fixtureElement->team[0]->name;
+        $this->teamAway = (string) $fixtureElement->team[1]->name;
+
+        $this->venue = $this->composeLocationName($fixtureElement->location);
     }
 
-    private function readValues(\SimpleXMLElement $fixtureElement) {
-        $this->number = intval($fixtureElement->nr);
-        $this->matchday = (string) $fixtureElement->spieltag;
-        $this->date = (string) $fixtureElement->datum;
-        $this->openingTime = (string) $fixtureElement->hallenoeffnung;
-        $this->startTime = (string) $fixtureElement->spielbeginn;
-        $this->teamHome = (string) $fixtureElement->heim;
-        $this->teamAway = (string) $fixtureElement->gast;
-        $this->scoreHome = intval($fixtureElement->sheim);
-        $this->scoreAway = intval($fixtureElement->sgast);
-        $this->setResults = (string) $fixtureElement->result;
-        $this->venue = (string) $fixtureElement->halle;
+    private function composeLocationName($locationNode) {
+        return $locationNode->name 
+        . "<br>" 
+        . $locationNode->street
+        . "<br>"
+        . $locationNode->postalCode
+        . " "
+        . $locationNode->city;
     }
 }
 ?>

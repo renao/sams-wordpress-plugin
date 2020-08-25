@@ -1,13 +1,13 @@
-# WVV Plugin for WordPress
+# DVV Plugin for WordPress
 
 ## Features
 
-* Shortcode for WVV table integration
-* Shortcode for WVV fixtures integration
+* Shortcode for DVV table integration
+* Shortcode for DVV fixtures integration
 
 ## Context
 
-The regional german volleyball confederation WVV (Westdeutscher Volleyballverband) provides an XML API for their league management tool `Aufsteiger`.
+The national german volleyball confederation DVV (Deutscher Volleyballverband) provides an XML API for their league management tool `SAMS`.
 
 After years of maintaining sports-related websites, gathering the experience that there is nothing more boring than updating results, fixtures and standings, I forced myself to head straight into WordPress plugin development and PHP.
 
@@ -17,32 +17,33 @@ The plugin itself is at a very early stage and I am still new to PHP and WordPre
 
 Caused by that the installation needs some manual work at the beginning (it is not that hard - trust me).
 
-1. Prepare a folder called `wvv-plugin` and copy the entire content from the folders `app` and `wordpress` into it.
-1. Upload the`wvv-plugin` folder to your WordPress plugins directory (`wp-content/plugins`)
+1. Prepare a folder called `sams-plugin` and copy the entire content from the folders `app` and `wordpress` into it.
+1. Upload the`sams-plugin` folder to your WordPress plugins directory (`wp-content/plugins`)
 1. Log into your sites Admin CP and activate it from the plugins index page
 
 ## Usage
 
-### Integrate a WVV table into your WordPress content
+### Integrate a SAMS table into your WordPress content
 
-After activating the plugin succesfully,you can place a table to a certain point of your website using the `wvvtable` shortcode with a `season` id and a `division` id, like this:
-
-``` php
-[wvvtable season="2017" division="201797"]
-```
-
-### Integrate a WVV fixture into your WordPress content
-
-You can place fixtures for a certain division and team using the `wvvfixtures` shortcode with a `season` id and a `division` id, and a name of a `club`:
+After activating the plugin succesfully,you can place a table to a certain point of your website using the `samstable` shortcode with your `apikey`, a `matchseriesid`, like this:
 
 ``` php
-[wvvfixtures season="2017" division="201781" club="TuS Herten II"]
+[samstable apikey="your_api_key" matchseriesid="2012217"]
 ```
 
-### Obtaining WVV division and season ids
+### Integrate a SAMS fixture into your WordPress content
 
-Currently the WVV provides the division ids (`staffel ids` inside the document) on their [Ergebnisdienst](https://www.volleyball.nrw/spielwesen/phoenixaufsteiger/ergebnisdienst/) page, or [click here](https://www.volleyball.nrw/fileadmin/spielwesen/Downloads/staffel_id_2017-18.pdf) to get directly to the list.
+You can place fixtures for a certain division and team using the `samsfixtures` shortcode with your `apikey`, a `matchseriesid` and a `teamid`:
 
+``` php
+[samsfixtures apikey="your_api_key" matchseriesid="match_series_id" teamid="your_team_id"]
+```
+
+### Obtaining DVV division, match series, season etc. information
+
+The SAMS XML-interface is describes in the following wiki:
+
+[XML Schnittstelle](http://wiki.sams-server.de/wiki/XML-Schnittstelle#Spielplan_und_Ergebnisse)
 
 ## License
 

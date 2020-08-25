@@ -1,26 +1,20 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use SAMSPlugin\Presenters\TablePresenter;
 use SAMSPlugin\Models\SAMSTable;
 
-final class TablePresenterTest extends TestCase {
+final class SAMSTableTest extends TestCase {
 
-    public function testRendersTablesWithEntries() {
-        $table = new TestTable();
+    public function testCreateAndFillTable() {
+        $tableXml = new SimpleXmlElement($this->validXml);
+        $table = new SAMSTable($tableXml);
 
-        $rendered = TablePresenter::render($table);
-        $rawTemplate = file_get_contents(__DIR__ . "/../../app/templates/table.html");
-
-        $this->assertNotNull($rendered);
-        $this->assertNotEquals($rawTemplate, $rendered);
+        $this->assertEquals(2, count($table->tableEntries));
+        $this->assertEquals("VV Humann Essen", $table->tableEntries[0]->teamName);
+        $this->assertEquals("VTV Freier Grund", $table->tableEntries[1]->teamName);
     }
-}
 
-class TestTable extends SAMSTable {
-    
-        public function __construct() {
-            parent::__construct(new SimpleXMLElement(<<<XML
+    private $validXml = <<<XML
 <?xml version="1.0" encoding="UTF-8"?>
 <rankings>
 <matchSeries>wird ignoriert</matchSeries>
@@ -133,10 +127,7 @@ class TestTable extends SAMSTable {
 </resultTypes>
 </ranking>
 </rankings>
-XML
-            ));
-        }
-    }
-
+XML;
+}
 
 ?>

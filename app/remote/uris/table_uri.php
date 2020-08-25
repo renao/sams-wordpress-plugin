@@ -1,25 +1,28 @@
 <?php
 
-namespace WVVPlugin\Remote\URIs;
+namespace SAMSPlugin\Remote\URIs;
 
 class TableURI {
 
-    private $season;
-    private $division;
+    private $apiKey;
+    private $matchSeries;
 
-    public function __construct($seasonId, $divisionId) {
-        $this->validateArguments($seasonId, $divisionId);
-        $this->season = $seasonId;
-        $this->division = $divisionId;
+    public function __construct($apiKey, $matchSeriesId) {
+        $this->validateArguments($apiKey, $matchSeriesId);
+        $this->apiKey = $apiKey;
+        $this->matchSeries = $matchSeriesId;
     }
 
     public function toString() {
-        return "https://wvv.it4sport.de/data/vbnw/aufsteiger/public/tabelle_". $this->season . "_" . $this->division . ".xml";
+        return "https://dvv.sams-server.de/xml/rankings.xhtml?apiKey=" 
+        . $this->apiKey 
+        . "&matchSeriesId=" 
+        . $this->matchSeries;
     }
 
-    private function validateArguments($seasonId, $divisionId) {
-        if (($seasonId == null) || ($divisionId == null)) {
-            throw new \InvalidArgumentException("SEASON ID and DIVISION ID cannot be NULL");
+    private function validateArguments($apiKey, $matchSeriesId) {
+        if (($apiKey == null) || ($matchSeriesId == null)) {
+            throw new \InvalidArgumentException("apiKey and matchSeriesId cannot be NULL");
         }
     }
 }

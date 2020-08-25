@@ -1,6 +1,6 @@
 <?php
 
-namespace WVVPlugin\Remote;
+namespace SAMSPlugin\Remote;
 
 class XMLFetcher {
 

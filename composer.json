@@ -1,6 +1,6 @@
 {
-    "name": "renao/wvv-wordpress-plugin",
-    "description": "WordPress Plugin to integrate Aufsteiger tables and fixtures into WordPress content",
+    "name": "renao/sams-wordpress-plugin",
+    "description": "WordPress Plugin to integrate SAMS tables and fixtures into WordPress content",
     "require-dev": {
         "phpunit/phpunit": ">=9.0.0"
     },
