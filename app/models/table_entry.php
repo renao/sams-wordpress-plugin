@@ -1,6 +1,6 @@
 <?php
 
-namespace WVVPlugin\Models;
+namespace SAMSPlugin\Models;
 
 class TableEntry {
     public $place;
@@ -17,14 +17,14 @@ class TableEntry {
     }
 
     private function readValues(\SimpleXMLElement $tableElement) {
-        $this->place = intval($tableElement->platz);
-        $this->teamName = (string) $tableElement->team;
-        $this->games = intval($tableElement->spiele);
-        $this->setsPro = intval($tableElement->plussaetze);
-        $this->setsCon = intval($tableElement->minussaetze);
-        $this->ballsPro = intval($tableElement->plusbaelle);
-        $this->ballsCon = intval($tableElement->minusbaelle);
-        $this->points = intval($tableElement->dppunkte);
+        $this->place = intval($tableElement->place);
+        $this->teamName = (string) ($tableElement->team->name);
+        $this->games = intval($tableElement->matchesPlayed);
+        $this->setsPro = intval($tableElement->setWinScore);
+        $this->setsCon = intval($tableElement->setLoseScore);
+        $this->ballsPro = intval($tableElement->ballWinScore);
+        $this->ballsCon = intval($tableElement->ballLoseScore);
+        $this->points = intval($tableElement->points);
     }
 }
 ?>
