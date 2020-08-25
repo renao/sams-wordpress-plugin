@@ -1,12 +1,12 @@
 <?php
 
-namespace WVVPlugin\Presenters;
+namespace SAMSPlugin\Presenters;
 
-use WVVPlugin\Models\WVVTable;
+use SAMSPlugin\Models\SAMSTable;
 
 class TablePresenter {
 
-    public static function render(WVVTable $table) {
+    public static function render(SAMSTable $table) {
         $htmlBody = file_get_contents(__DIR__ . "/../templates/table.html");
 
         if (count($table->tableEntries) > 0) {

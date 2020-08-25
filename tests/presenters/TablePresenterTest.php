@@ -1,8 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use WVVPlugin\Presenters\TablePresenter;
-use WVVPlugin\Models\WVVTable;
+use SAMSPlugin\Presenters\TablePresenter;
+use SAMSPlugin\Models\SAMSTable;
 
 final class TablePresenterTest extends TestCase {
 
@@ -17,63 +17,122 @@ final class TablePresenterTest extends TestCase {
     }
 }
 
-class TestTable extends WVVTable {
+class TestTable extends SAMSTable {
     
         public function __construct() {
             parent::__construct(new SimpleXMLElement(<<<XML
 <?xml version="1.0" encoding="UTF-8"?>
-    <tabellen>
-        <element>
-            <platz>1</platz>
-            <team>SG Mondorf</team>
-            <spiele>18</spiele>
-            <plussaetze>48</plussaetze>
-            <minussaetze>18</minussaetze>
-            <plusbaelle>1542</plusbaelle>
-            <minusbaelle>1368</minusbaelle>
-            <dppunkte>45</dppunkte>
-            <dpplatz>1</dpplatz>
-            <dpsiege>15</dpsiege>
-            <dpniederlagen>3</dpniederlagen>
-            <dpgewinn3031>14</dpgewinn3031>
-            <dpgewinn30>7</dpgewinn30>
-            <dpgewinn31>7</dpgewinn31>
-            <dpgewinn32>1</dpgewinn32>
-            <dpgewinn20>0</dpgewinn20>
-            <dpgewinn21>0</dpgewinn21>
-            <dpniederlage1303>2</dpniederlage1303>
-            <dpniederlage03>1</dpniederlage03>
-            <dpniederlage13>1</dpniederlage13>
-            <dpniederlage23>1</dpniederlage23>
-            <dpniederlage12>0</dpniederlage12>
-            <dpniederlage02>0</dpniederlage02>
-        </element>
-        <element>
-            <platz>2</platz>
-            <team>TVA Fischenich II</team>
-            <spiele>18</spiele>
-            <plussaetze>49</plussaetze>
-            <minussaetze>22</minussaetze>
-            <plusbaelle>1620</plusbaelle>
-            <minusbaelle>1454</minusbaelle>
-            <dppunkte>44</dppunkte>
-            <dpplatz>2</dpplatz>
-            <dpsiege>15</dpsiege>
-            <dpniederlagen>3</dpniederlagen>
-            <dpgewinn3031>13</dpgewinn3031>
-            <dpgewinn30>4</dpgewinn30>
-            <dpgewinn31>9</dpgewinn31>
-            <dpgewinn32>2</dpgewinn32>
-            <dpgewinn20>0</dpgewinn20>
-            <dpgewinn21>0</dpgewinn21>
-            <dpniederlage1303>2</dpniederlage1303>
-            <dpniederlage03>0</dpniederlage03>
-            <dpniederlage13>2</dpniederlage13>
-            <dpniederlage23>1</dpniederlage23>
-            <dpniederlage12>0</dpniederlage12>
-            <dpniederlage02>0</dpniederlage02>
-        </element>
-    </tabellen>
+<rankings>
+<matchSeries>wird ignoriert</matchSeries>
+<ranking>
+<team>
+<id>21416917</id>
+<uuid>d55a7cf8-d90a-4154-9853-53ba9c51ecc3</uuid>
+<name>VV Humann Essen</name>
+<shortName>VVH Essen</shortName>
+<clubCode>VVHE</clubCode>
+<club>
+<name>VV Humann Essen</name>
+<shortName>VVHE</shortName>
+</club>
+</team>
+<place>1</place>
+<matchesPlayed>17</matchesPlayed>
+<wins>0</wins>
+<losses>0</losses>
+<points>20</points>
+<setPoints>0:0</setPoints>
+<setWinScore>12</setWinScore>
+<setLoseScore>13</setLoseScore>
+<setPointDifference>0</setPointDifference>
+<setQuotient>∞</setQuotient>
+<ballPoints>0:0</ballPoints>
+<ballWinScore>30</ballWinScore>
+<ballLoseScore>20</ballLoseScore>
+<ballPointDifference>0</ballPointDifference>
+<ballQuotient>∞</ballQuotient>
+<resultTypes>
+<matchResult>
+<result>3:0</result>
+<count>0</count>
+</matchResult>
+<matchResult>
+<result>3:1</result>
+<count>0</count>
+</matchResult>
+<matchResult>
+<result>3:2</result>
+<count>0</count>
+</matchResult>
+<matchResult>
+<result>2:3</result>
+<count>0</count>
+</matchResult>
+<matchResult>
+<result>1:3</result>
+<count>0</count>
+</matchResult>
+<matchResult>
+<result>0:3</result>
+<count>0</count>
+</matchResult>
+</resultTypes>
+</ranking>
+<ranking>
+<team>
+<id>21979472</id>
+<uuid>1426f6ee-6a7a-48b6-9bf8-184c6fe4851d</uuid>
+<name>VTV Freier Grund</name>
+<shortName>Freier Grund</shortName>
+<clubCode>VTV</clubCode>
+<club>
+<name>VTV Freier Grund</name>
+<shortName/>
+</club>
+</team>
+<place>2</place>
+<matchesPlayed>4</matchesPlayed>
+<wins>0</wins>
+<losses>0</losses>
+<points>9</points>
+<setPoints>0:0</setPoints>
+<setWinScore>78</setWinScore>
+<setLoseScore>17</setLoseScore>
+<setPointDifference>0</setPointDifference>
+<setQuotient>∞</setQuotient>
+<ballPoints>0:0</ballPoints>
+<ballWinScore>11</ballWinScore>
+<ballLoseScore>22</ballLoseScore>
+<ballPointDifference>0</ballPointDifference>
+<ballQuotient>∞</ballQuotient>
+<resultTypes>
+<matchResult>
+<result>3:0</result>
+<count>0</count>
+</matchResult>
+<matchResult>
+<result>3:1</result>
+<count>0</count>
+</matchResult>
+<matchResult>
+<result>3:2</result>
+<count>0</count>
+</matchResult>
+<matchResult>
+<result>2:3</result>
+<count>0</count>
+</matchResult>
+<matchResult>
+<result>1:3</result>
+<count>0</count>
+</matchResult>
+<matchResult>
+<result>0:3</result>
+<count>0</count>
+</matchResult>
+</resultTypes>
+</ranking>
+</rankings>
 XML
             ));
         }
