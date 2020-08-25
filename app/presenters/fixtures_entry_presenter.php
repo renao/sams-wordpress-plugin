@@ -1,8 +1,8 @@
 <?php
 
-namespace WVVPlugin\Presenters;
+namespace SAMSPlugin\Presenters;
 
-use WVVPlugin\Models\FixturesEntry;
+use SAMSPlugin\Models\FixturesEntry;
 
 class FixturesEntryPresenter {
 
