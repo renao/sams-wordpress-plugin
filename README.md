@@ -1,9 +1,9 @@
-# DVV Plugin for WordPress
+# SAMS Plugin for WordPress
 
 ## Features
 
-* Shortcode for DVV table integration
-* Shortcode for DVV fixtures integration
+* Shortcode for SAMS table integration
+* Shortcode for SAMS fixtures integration
 
 ## Context
 
