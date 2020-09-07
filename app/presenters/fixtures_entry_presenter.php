@@ -31,8 +31,8 @@ class FixturesEntryPresenter {
 
     private static function getFormattedResult($fixtureEntry) {
         return ($fixtureEntry->hasResult())
-            ? $fixture->score
-            : "";
+        ? "(" . $fixtureEntry->score . ")"
+        : "";
     }
 
     private static $entryTemplateKeys = array(
