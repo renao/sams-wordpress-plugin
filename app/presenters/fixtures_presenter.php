@@ -6,9 +6,9 @@ use SAMSPlugin\Models\SAMSFixtures;
 
 class FixturesPresenter {
 
-    public static function render(SAMSFixtures $fixtures, $club) {
+    public static function render(SAMSFixtures $fixtures) {
         $htmlBody = file_get_contents(__DIR__ . "/../templates/fixtures.html");
-
+        
         if (count($fixtures->fixturesEntries) > 0) {
             $entriesHtml = "";
             foreach ($fixtures->fixturesEntries as $entry) {
