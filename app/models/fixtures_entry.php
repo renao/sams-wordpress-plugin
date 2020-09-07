@@ -22,8 +22,12 @@ class FixturesEntry {
     private function readValues(\SimpleXMLElement $fixtureElement) {
         $this->date = (string) $fixtureElement->date;
         $this->startTime = (string) $fixtureElement->time;
-        $this->teamHome = (string) $fixtureElement->team[0]->name;
-        $this->teamAway = (string) $fixtureElement->team[1]->name;
+        $this->teamHome = (isset($fixtureElement->team[0]->name))
+            ? (string) $fixtureElement->team[0]->name
+            : "";
+        $this->teamAway = (isset($fixtureElement->team[1]->name))
+        ? (string) $fixtureElement->team[1]->name
+        : "";
         $this->venue = $this->composeLocationName($fixtureElement->location);
         $this->score = (string) $fixtureElement->results->setPoints;
     }
