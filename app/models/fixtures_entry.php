@@ -26,10 +26,12 @@ class FixturesEntry {
             ? (string) $fixtureElement->team[0]->name
             : "";
         $this->teamAway = (isset($fixtureElement->team[1]->name))
-        ? (string) $fixtureElement->team[1]->name
-        : "";
+            ? (string) $fixtureElement->team[1]->name
+            : "";
         $this->venue = $this->composeLocationName($fixtureElement->location);
-        $this->score = (string) $fixtureElement->results->setPoints;
+        $this->score =  (isset($fixtureElement->team[1]->name))
+            ? (string) $fixtureElement->results->setPoints
+            : "";
     }
 
     private function composeLocationName($locationNode) {
