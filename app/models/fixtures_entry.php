@@ -3,13 +3,11 @@
 namespace SAMSPlugin\Models;
 
 class FixturesEntry {
-    public $matchday;
     public $date;
     public $startTime;
     public $teamHome;
     public $teamAway;
-    public $scoreHome;
-    public $scoreAway;
+    public $score;
     public $setResults;
     public $venue;
 
@@ -18,19 +16,14 @@ class FixturesEntry {
     }
 
     public function hasResult() {
-        return isset($this->scoreHome)
-            && isset($this->scoreAway)
-            && ($this->scoreHome != 0 
-                || $this->scoreAway != 0);
+        return isset($this->score) 
+        && ($this->score != "");
     }
 
     private function readValues(\SimpleXMLElement $fixtureElement) {
-        $this->matchday = (string) $fixtureElement->number;
         $this->date = (string) $fixtureElement->date;
         $this->startTime = (string) $fixtureElement->time;
-        // $this->scoreHome = intval($fixtureElement->sheim);
-        // $this->scoreAway = intval($fixtureElement->sgast);
-        // $this->setResults = (string) $fixtureElement->result;
+        $this->score = (string) $fixtureElement->results->setPoints;
         $this->venue = (string) $fixtureElement->halle;
         $this->teamHome = (string) $fixtureElement->team[0]->name;
         $this->teamAway = (string) $fixtureElement->team[1]->name;
