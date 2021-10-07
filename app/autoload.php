@@ -5,6 +5,7 @@
     require_once("presenters/table_presenter.php");
     require_once("remote/uris/table_uri.php");
     require_once("remote/xml_fetcher.php");
+    require_once("remote/file_cacher.php");
     require_once("sams_table_renderer.php");
 
     require_once("models/fixtures_entry.php");
