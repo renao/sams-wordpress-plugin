@@ -2,7 +2,7 @@
     "name": "renao/sams-wordpress-plugin",
     "description": "WordPress Plugin to integrate SAMS tables and fixtures into WordPress content",
     "require-dev": {
-        "phpunit/phpunit": ">=9.0.0"
+        "phpunit/phpunit": ">=11.0.0"
     },
 
     "autoload": {
