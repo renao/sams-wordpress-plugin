@@ -1,10 +1,12 @@
 <?php
 
+namespace SAMSPlugin\Tests\Presenters;
+
 use PHPUnit\Framework\TestCase;
 use SAMSPlugin\Models\FixturesEntry;
 use SAMSPlugin\Presenters\FixturesEntryPresenter;
 
-final class FixturesEntryPresenterTest extends TestCase {
+class FixturesEntryPresenterTest extends TestCase {
 
     public function testRendersFixturesEntryHtmlFromTemplate() {
         $entry = new TestFixturesEntry();

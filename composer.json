@@ -5,7 +5,8 @@
 
     "autoload": {
         "psr-4": {
-            "SAMSPlugin\\": "includes/"
+            "SAMSPlugin\\": "includes/",
+            "SAMSPlugin\\Tests": "tests/"
         }
     },
     "require-dev": {
