@@ -1,8 +1,5 @@
 {
   "plugins": [
-    "./sams-plugin"
-  ],
-  "mappings": {
-    "wp-content/plugins/sams-plugin": "./sams-plugin"
-  }
+    "."
+  ]
 }

@@ -1,17 +1,14 @@
 {
-    "name": "renao/sams-wordpress-plugin",
+    "name": "renao/sams-plugin",
     "description": "WordPress Plugin to integrate SAMS tables and fixtures into WordPress content",
-    "require-dev": {
-        "phpunit/phpunit": ">=11.0.0"
-    },
+    "type": "wordpress-plugin",
 
     "autoload": {
-        "classmap": [
-             "app",
-             "app/remote",
-             "app/remote/uris",
-             "app/models",
-             "app/presenters"
-         ]
-     }
+        "psr-4": {
+            "SAMSPlugin\\": "includes/"
+        }
+    },
+    "require-dev": {
+        "yoast/phpunit-polyfills": "*"
+    }
 }
