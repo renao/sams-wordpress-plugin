@@ -1,11 +1,15 @@
 <?php
 /*
-Plugin Name: SAMS Plugin
-Description: Integrate rankings and fixtures from the official german volleyball service SAMS.
-Author: Renão
-Website: https://github.com/renao
+Plugin Name:    SAMS Plugin
+Plugin URI:     https://github.com/renao/sams-wordpress-plugin
+Description:    Integrate rankings and fixtures from the official german volleyball results service SAMS.
+Author:         René Siemer
+Authors URI:    https://github.com/renao
+License:        GPLv3
+License URI:    https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain:    sams-plugin
+Version:        0.2.0
 
-Version: 0.2
 */
 namespace SAMSPlugin;
 
