@@ -2,10 +2,20 @@
     "name": "renao/sams-plugin",
     "description": "WordPress Plugin to integrate SAMS tables and fixtures into WordPress content",
     "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "René Siemer",
+            "email": "me@renao.de"
+        }
+    ],
+
+    "config": {
+        "vendor-dir": "lib"
+    },
 
     "autoload": {
         "psr-4": {
-            "SAMSPlugin\\": "includes/",
+            "SAMSPlugin\\": "src/",
             "SAMSPlugin\\Tests\\": "tests/"
         }
     },

@@ -7,14 +7,14 @@ Website: https://github.com/renao
 
 Version: 0.2
 */
-$autoload_file_path = __DIR__ . '/vendor/autoload.php';
+namespace SAMSPlugin;
+
+$autoload_file_path = __DIR__ . '/lib/autoload.php';
 if ( file_exists($autoload_file_path) ) {
     require_once $autoload_file_path;
 } else {
     throw new Exception('Autoload file missing', $autoload_file_path);
 }
-
-
 
 use SAMSPlugin\Shortcodes\SAMSFixtureShortcode;
 use SAMSPlugin\Shortcodes\SAMSTableShortcode;
