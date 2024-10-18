@@ -1,5 +1,7 @@
 <?php
 
+namespace SAMSPlugin\Tests\Remote\URIs;
+
 use PHPUnit\Framework\TestCase;
 use SAMSPlugin\Remote\URIs\FixturesURI;
 
