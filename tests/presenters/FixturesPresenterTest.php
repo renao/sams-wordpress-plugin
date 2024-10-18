@@ -1,10 +1,12 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
-use SAMSPlugin\Presenters\FixturesPresenter;
-use SAMSPlugin\Models\SAMSFixtures;
+namespace SAMSPlugin\Tests\Presenters;
 
-final class FixturesPresenterTest extends TestCase {
+use PHPUnit\Framework\TestCase;
+use SAMSPlugin\Models\Fixtures;
+use SAMSPlugin\Presenters\FixturesPresenter;
+
+class FixturesPresenterTest extends TestCase {
 
     public function testRendersFixturesWithEntries() {
         $fixtures = new TestFixtures();
@@ -17,7 +19,7 @@ final class FixturesPresenterTest extends TestCase {
     }
 }
 
-class TestFixtures extends SAMSFixtures {
+class TestFixtures extends Fixtures {
     
         public function __construct() {
             parent::__construct(new SimpleXMLElement(<<<XML

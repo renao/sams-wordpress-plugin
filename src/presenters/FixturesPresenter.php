@@ -2,11 +2,11 @@
 
 namespace SAMSPlugin\Presenters;
 
-use SAMSPlugin\Models\SAMSFixtures;
+use SAMSPlugin\Models\Fixtures;
 
 class FixturesPresenter {
 
-    public static function render(SAMSFixtures $fixtures) {
+    public static function render(Fixtures $fixtures) {
         $htmlBody = file_get_contents(__DIR__ . "/../templates/fixtures.html");
         
         if (count($fixtures->fixturesEntries) > 0) {

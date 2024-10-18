@@ -1,13 +1,15 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
-use SAMSPlugin\Models\TableEntry;
+namespace SAMSPlugin\Tests\Models;
 
-final class TableEntryTest extends TestCase {
+use PHPUnit\Framework\TestCase;
+use SAMSPlugin\Models\RankingEntry;
+
+final class RankingEntryTest extends TestCase {
 
     public function testCreatesAndSetsProperties() {
         $simpleXml = new SimpleXMLElement($this->validXml);
-        $entry = new TableEntry($simpleXml);
+        $entry = new RankingEntry($simpleXml);
 
         $this->assertEquals(4, $entry->place);
         $this->assertEquals("TuS Herten", $entry->teamName);

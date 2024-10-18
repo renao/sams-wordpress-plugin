@@ -16,10 +16,10 @@ if ( file_exists($autoload_file_path) ) {
     throw new Exception('Autoload file missing', $autoload_file_path);
 }
 
-use SAMSPlugin\Shortcodes\SAMSFixtureShortcode;
-use SAMSPlugin\Shortcodes\SAMSTableShortcode;
+use SAMSPlugin\Shortcodes\FixturesShortcode;
+use SAMSPlugin\Shortcodes\RankingShortcode;
 
-add_shortcode( 'samsfixtures', array(new SAMSFixtureShortcode(), 'fetch_and_render_sams_fixtures'));
-add_shortcode( 'samstable', array(new SAMSTableShortcode(), 'fetch_and_render_sams_table') );
+add_shortcode( 'samsfixtures', array(new FixturesShortcode(), 'fetch_and_render_sams_fixtures'));
+add_shortcode( 'samstable', array(new RankingShortcode(), 'fetch_and_render_sams_table') );
 
 ?>

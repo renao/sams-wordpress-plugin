@@ -1,15 +1,17 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
-use SAMSPlugin\Remote\URIs\TableURI;
+namespace SAMSPlugin\Tests\Remote\URIs;
 
-final class TableURITest extends TestCase {
+use PHPUnit\Framework\TestCase;
+use SAMSPlugin\Remote\URIs\RankingURI;
+
+final class RankingURITest extends TestCase {
 
     public function testComposeTableXMLURI() {
 
         $seriesId = "[some_match_series]";
         $apiKey = "[some_season]";
-        $tableUri = new TableURI($apiKey, $seriesId);
+        $tableUri = new RankingURI($apiKey, $seriesId);
 
         $expected 
             = "https://dvv.sams-server.de/xml/rankings.xhtml?apiKey="
@@ -22,13 +24,13 @@ final class TableURITest extends TestCase {
     public function testDoesNotAllowEmptyApiKey() {
         $this->expectException(InvalidArgumentException::class);
 
-        new TableURI(null, "some match series");
+        new RankingURI(null, "some match series");
     }
 
     public function testDoesNotAllowEmptyMatchSeriesId() {
         $this->expectException(InvalidArgumentException::class);
 
-        new TableURI("some api key", null);
+        new RankingURI("some api key", null);
     }
 }
 

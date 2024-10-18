@@ -2,7 +2,7 @@
 
 namespace SAMSPlugin\Models;
 
-class SAMSFixtures {
+class Fixtures {
     public $fixturesEntries = [];
 
     public function __construct(\SimpleXMLElement $fixturesXml) {

@@ -22,7 +22,7 @@ class FixturesEntryPresenterTest extends TestCase {
 class TestFixturesEntry extends FixturesEntry {
     
         public function __construct() {
-            parent::__construct(new SimpleXMLElement(<<<XML
+            parent::__construct(new \SimpleXMLElement(<<<XML
             <match>
 <id>22089353</id>
 <uuid>63e8b2bf-5d69-4b94-8db9-703cbb5f0d92</uuid>

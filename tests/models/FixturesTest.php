@@ -1,13 +1,15 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
-use SAMSPlugin\Models\SAMSFixtures;
+namespace SAMSPlugin\Tests\Models;
 
-final class SAMSFixturesTest extends TestCase {
+use PHPUnit\Framework\TestCase;
+use SAMSPlugin\Models\Fixtures;
+
+final class FixturesTest extends TestCase {
 
     public function testCreateAndFillEntries() {
         $fixturesXml = new SimpleXmlElement($this->validXml);
-        $fixtures = new SAMSFixtures($fixturesXml);
+        $fixtures = new Fixtures($fixturesXml);
 
         $this->assertEquals(2, count($fixtures->fixturesEntries));
         $this->assertEquals("TuS Herten", $fixtures->fixturesEntries[0]->teamHome);

@@ -2,7 +2,7 @@
 
 namespace SAMSPlugin\Remote\URIs;
 
-class TableURI {
+class RankingURI {
 
     private $apiKey;
     private $matchSeries;

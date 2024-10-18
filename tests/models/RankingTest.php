@@ -1,13 +1,15 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
-use SAMSPlugin\Models\SAMSTable;
+namespace SAMSPlugin\Tests\Models;
 
-final class SAMSTableTest extends TestCase {
+use PHPUnit\Framework\TestCase;
+use SAMSPlugin\Models\Ranking;
+
+final class RankingTest extends TestCase {
 
     public function testCreateAndFillTable() {
         $tableXml = new SimpleXmlElement($this->validXml);
-        $table = new SAMSTable($tableXml);
+        $table = new Ranking($tableXml);
 
         $this->assertEquals(2, count($table->tableEntries));
         $this->assertEquals("VV Humann Essen", $table->tableEntries[0]->teamName);

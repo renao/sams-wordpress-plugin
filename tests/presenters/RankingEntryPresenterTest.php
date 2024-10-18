@@ -1,5 +1,7 @@
 <?php
 
+namespace SAMSPlugin\Tests\Presenters;
+
 use PHPUnit\Framework\TestCase;
 use SAMSPlugin\Models\TableEntry;
 use SAMSPlugin\Presenters\TableEntryPresenter;
@@ -9,15 +11,15 @@ final class TableEntryPresenterTest extends TestCase {
     public function testRendersTableEntryHtmlFromTemplate() {
         $entry = new TestTableEntry();
 
-        $rendered = TableEntryPresenter::render($entry);
-        $rawTemplate = file_get_contents(__DIR__ . "/../../app/templates/__table_entry.html");
+        $rendered = RankingEntryPresenter::render($entry);
+        $rawTemplate = file_get_contents(__DIR__ . "/../../app/templates/__ranking_entry.html");
 
         $this->assertNotNull($rendered);
         $this->assertNotEquals($rawTemplate, $rendered);
     }
 }
 
-class TestTableEntry extends TableEntry {
+class TestTableEntry extends RankingEntry {
     
         public function __construct() {
             parent::__construct(new SimpleXMLElement(<<<XML

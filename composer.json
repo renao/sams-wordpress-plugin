@@ -15,11 +15,16 @@
 
     "autoload": {
         "psr-4": {
-            "SAMSPlugin\\": "src/",
+            "SAMSPlugin\\": "src/"
+        }
+    },
+  
+    "autoload-dev": {
+        "psr-4": {
             "SAMSPlugin\\Tests\\": "tests/"
         }
     },
-    "require-dev": {
-        "yoast/phpunit-polyfills": "*"
+    "require":{
+        "ext-simplexml": "*"
     }
 }

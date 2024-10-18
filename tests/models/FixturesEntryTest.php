@@ -1,5 +1,7 @@
 <?php
 
+namespace SAMSPlugin\Tests\Models;
+
 use PHPUnit\Framework\TestCase;
 use SAMSPlugin\Models\FixturesEntry;
 

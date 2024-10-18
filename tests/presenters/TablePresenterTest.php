@@ -1,23 +1,25 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
-use SAMSPlugin\Presenters\TablePresenter;
-use SAMSPlugin\Models\SAMSTable;
+namespace SAMSPlugin\Tests\Presenters;
 
-final class TablePresenterTest extends TestCase {
+use PHPUnit\Framework\TestCase;
+use SAMSPlugin\Models\Ranking;
+use SAMSPlugin\Presenters\RankingPresenter;
+
+final class RankingPresenterTest extends TestCase {
 
     public function testRendersTablesWithEntries() {
-        $table = new TestTable();
+        $table = new TestRanking();
 
-        $rendered = TablePresenter::render($table);
-        $rawTemplate = file_get_contents(__DIR__ . "/../../app/templates/table.html");
+        $rendered = RankingPresenter::render($table);
+        $rawTemplate = file_get_contents(__DIR__ . "/../../app/templates/ranking.html");
 
         $this->assertNotNull($rendered);
         $this->assertNotEquals($rawTemplate, $rendered);
     }
 }
 
-class TestTable extends SAMSTable {
+class TestRanking extends Ranking {
     
         public function __construct() {
             parent::__construct(new SimpleXMLElement(<<<XML

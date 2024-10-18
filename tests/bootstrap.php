@@ -1,16 +1,15 @@
 <?php
-// WP_TESTS_PHPUNIT_POLYFILLS_PATH definieren
+echo "Bootstraped!";
+
 if ( file_exists( __DIR__ . '/../lib/autoload.php' ) ) {
     require_once __DIR__ . '/../lib/autoload.php'; // Pfad zur Composer-Autoload-Datei
+} else {
+    throw new Exception ("Autoload-Datei nicht gefunden");
 }
-
-// WP_TESTS_PHPUNIT_POLYFILLS_PATH definieren
-define( 'WP_TESTS_PHPUNIT_POLYFILLS_PATH', __DIR__ . '/../lib/yoast/phpunit-polyfills/autoload.php' );
-
 
 // WordPress-Testumgebung initialisieren
 $_tests_dir = getenv('WP_TESTS_DIR');
-
+echo "Test Dir => " . $_tests_dir;
 if ( ! $_tests_dir ) {
     $_tests_dir = '/var/www/html/wp-content/plugins/wordpress-tests-lib';
 }
