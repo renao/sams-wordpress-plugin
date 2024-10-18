@@ -1,0 +1,2259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matches xmlns="http://sams-server.de/api/xml/ns/matches" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://sams-server.de/api/xml/ns/matches matches.xsd">
+        <match>
+          <id>54412517</id>
+          <uuid>f943cdc9-bc71-4feb-a7a1-cd7d76d3c807</uuid>
+          <number>2</number>
+          <date>09.09.2023</date>
+          <time>15:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52768743</id>
+            <uuid>afc71533-e534-4310-a01c-313090917385</uuid>
+            <name>TV Gerthe</name>
+            <club>TV Gerthe 1911 e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52768755</id>
+            <uuid>44fbc5be-dd36-4b5d-9626-6387c669b7b7</uuid>
+            <seasonTeamId>52768755</seasonTeamId>
+            <name>TV Hörde III</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>Turnverein Hörde 1861 e.V.</name>
+              <shortName>TVH</shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>38908729</id>
+              <name>Werner-von-Siemens-Schule</name>
+              <street>Haydnstr. 3</street>
+              <extraField>-</extraField>
+              <postalCode>44805</postalCode>
+              <city>Bochum</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>2</winner>
+              <setPoints>2:3</setPoints>
+              <ballPoints>103:104</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>21:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>27</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>18:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>22</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:23</points>
+                      <winner>TEAM1</winner>
+                      <duration>29</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:15</points>
+                      <winner>TEAM1</winner>
+                      <duration>23</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>14:16</points>
+                      <winner>TEAM2</winner>
+                      <duration>18</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>119</netDuration>
+        </match>
+        <match>
+          <id>54412536</id>
+          <uuid>ad79a1f2-5e78-4a86-9ad4-c1b8725ccd4f</uuid>
+          <number>8</number>
+          <date>16.09.2023</date>
+          <time>16:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52838305</id>
+            <uuid>2379d034-7105-4df4-aa4b-7e5046360b99</uuid>
+            <name>Lüner SV</name>
+            <club>Lüner SV e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52768743</id>
+            <uuid>afc71533-e534-4310-a01c-313090917385</uuid>
+            <seasonTeamId>52768743</seasonTeamId>
+            <name>TV Gerthe</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TV Gerthe 1911 e.V.</name>
+              <shortName></shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>38909487</id>
+              <name>Gymnasium Altlünen</name>
+              <street>Rudolf-Nagell-Str. 21</street>
+              <extraField>-</extraField>
+              <postalCode>44534</postalCode>
+              <city>Lünen</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>1</winner>
+              <setPoints>3:0</setPoints>
+              <ballPoints>75:54</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>25:20</points>
+                      <winner>TEAM1</winner>
+                      <duration>31</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:15</points>
+                      <winner>TEAM1</winner>
+                      <duration>21</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:19</points>
+                      <winner>TEAM1</winner>
+                      <duration>19</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>71</netDuration>
+        </match>
+        <match>
+          <id>54412546</id>
+          <uuid>5b8dbb7a-fa49-47ba-ae74-a55707cc870c</uuid>
+          <number>11</number>
+          <date>30.09.2023</date>
+          <time>14:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52768728</id>
+            <uuid>f9e7fd06-13da-4bb1-9ed0-31bf838cf6ca</uuid>
+            <name>1. VV Holzwickede</name>
+            <club>1. Volleyball-Verein Holzwickede 1986 e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52768728</id>
+            <uuid>f9e7fd06-13da-4bb1-9ed0-31bf838cf6ca</uuid>
+            <seasonTeamId>52768728</seasonTeamId>
+            <name>1. VV Holzwickede</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>1. Volleyball-Verein Holzwickede 1986 e.V.</name>
+              <shortName></shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>38908717</id>
+              <name>Hilgenbaumhalle</name>
+              <street>Opherdicker Str. 44</street>
+              <extraField>-</extraField>
+              <postalCode>59439</postalCode>
+              <city>Holzwickede</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>2</winner>
+              <setPoints>0:3</setPoints>
+              <ballPoints>36:75</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>9:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>20</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>12:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>20</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>15:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>22</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>30</spectators>
+            <netDuration>62</netDuration>
+        </match>
+        <match>
+          <id>54412559</id>
+          <uuid>9a159b57-56e3-422f-a8aa-0929492e6d52</uuid>
+          <number>15</number>
+          <date>22.10.2023</date>
+          <time>11:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <name>TuS Herten II</name>
+            <club>TuS Herten Volleyball e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52838143</id>
+            <uuid>2bbcbb0d-7abe-401d-92fa-c57ae0db5462</uuid>
+            <seasonTeamId>52838143</seasonTeamId>
+            <name>TV Gladbeck II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TV Gladbeck 1912 e.V.</name>
+              <shortName>Gladb</shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>15140213</id>
+              <name>Knappenhalle</name>
+              <street>Paschenbergstr. 95</street>
+              <extraField>-</extraField>
+              <postalCode>45699</postalCode>
+              <city>Herten</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>1</winner>
+              <setPoints>3:0</setPoints>
+              <ballPoints>75:50</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>25:10</points>
+                      <winner>TEAM1</winner>
+                      <duration>15</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:17</points>
+                      <winner>TEAM1</winner>
+                      <duration>21</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:23</points>
+                      <winner>TEAM1</winner>
+                      <duration>25</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>30</spectators>
+            <netDuration>61</netDuration>
+        </match>
+        <match>
+          <id>54412572</id>
+          <uuid>7774d912-f9bb-4d50-b47b-a7237087a4cb</uuid>
+          <number>19</number>
+          <date>29.10.2023</date>
+          <time>14:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52769974</id>
+            <uuid>13b7a430-bac9-45ba-8dc6-b37375e85fe9</uuid>
+            <name>TSC Eintracht Dortmund</name>
+            <club>TSC Eintracht Dortmund 1848/95 e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52769974</id>
+            <uuid>13b7a430-bac9-45ba-8dc6-b37375e85fe9</uuid>
+            <seasonTeamId>52769974</seasonTeamId>
+            <name>TSC Eintracht Dortmund</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TSC Eintracht Dortmund 1848/95 e.V.</name>
+              <shortName></shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>38911501</id>
+              <name>Sporthalle West</name>
+              <street>Victor-Toyka-Str. 6</street>
+              <extraField>-</extraField>
+              <postalCode>44139</postalCode>
+              <city>Dortmund</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>2</winner>
+              <setPoints>1:3</setPoints>
+              <ballPoints>66:99</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>9:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>16</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>11:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>20</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>26:24</points>
+                      <winner>TEAM1</winner>
+                      <duration>27</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>20:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>24</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>100</spectators>
+            <netDuration>87</netDuration>
+        </match>
+        <match>
+          <id>54412588</id>
+          <uuid>1be7a612-2d08-4b9e-83ba-6aa414a8d443</uuid>
+          <number>22</number>
+          <date>12.11.2023</date>
+          <time>13:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52768738</id>
+            <uuid>5386388d-f5e3-477b-87f2-f0d06530c389</uuid>
+            <name>TV Gerthe II</name>
+            <club>TV Gerthe 1911 e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52768752</id>
+            <uuid>e3ab938a-c6d8-4194-a64f-7289f88cafea</uuid>
+            <seasonTeamId>52768752</seasonTeamId>
+            <name>EVC Massen</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>EVC Massen e.V.</name>
+              <shortName></shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>38908729</id>
+              <name>Werner-von-Siemens-Schule</name>
+              <street>Haydnstr. 3</street>
+              <extraField>-</extraField>
+              <postalCode>44805</postalCode>
+              <city>Bochum</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>2</winner>
+              <setPoints>1:3</setPoints>
+              <ballPoints>91:101</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>27:29</points>
+                      <winner>TEAM2</winner>
+                      <duration>28</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>18:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>21</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:22</points>
+                      <winner>TEAM1</winner>
+                      <duration>24</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>21:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>21</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>94</netDuration>
+        </match>
+        <match>
+          <id>54412592</id>
+          <uuid>29be7ad6-38d0-4fbe-83b9-62036fa19e9d</uuid>
+          <number>25</number>
+          <date>19.11.2023</date>
+          <time>15:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <name>TuS Herten II</name>
+            <club>TuS Herten Volleyball e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52768738</id>
+            <uuid>5386388d-f5e3-477b-87f2-f0d06530c389</uuid>
+            <seasonTeamId>52768738</seasonTeamId>
+            <name>TV Gerthe II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TV Gerthe 1911 e.V.</name>
+              <shortName></shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>15140213</id>
+              <name>Knappenhalle</name>
+              <street>Paschenbergstr. 95</street>
+              <extraField>-</extraField>
+              <postalCode>45699</postalCode>
+              <city>Herten</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>1</winner>
+              <setPoints>3:2</setPoints>
+              <ballPoints>109:97</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>25:19</points>
+                      <winner>TEAM1</winner>
+                      <duration>20</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>24:26</points>
+                      <winner>TEAM2</winner>
+                      <duration>27</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>20:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>24</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:20</points>
+                      <winner>TEAM1</winner>
+                      <duration>23</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>15:7</points>
+                      <winner>TEAM1</winner>
+                      <duration>11</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>105</netDuration>
+        </match>
+        <match>
+          <id>54412621</id>
+          <uuid>bf4bba1e-8185-4df6-a713-d54b54e77f0e</uuid>
+          <number>34</number>
+          <date>09.12.2023</date>
+          <time>13:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52768755</id>
+            <uuid>44fbc5be-dd36-4b5d-9626-6387c669b7b7</uuid>
+            <name>TV Hörde III</name>
+            <club>Turnverein Hörde 1861 e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52838305</id>
+            <uuid>2379d034-7105-4df4-aa4b-7e5046360b99</uuid>
+            <seasonTeamId>52838305</seasonTeamId>
+            <name>Lüner SV</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>Lüner SV e.V.</name>
+              <shortName></shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>12503687</id>
+              <name>Phoenix-Gymnasium</name>
+              <street>Seekante 12</street>
+              <extraField>-</extraField>
+              <postalCode>44263</postalCode>
+              <city>Dortmund</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>2</winner>
+              <setPoints>0:3</setPoints>
+              <ballPoints>62:75</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>18:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>23</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>21:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>24</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>23:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>24</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>71</netDuration>
+        </match>
+        <match>
+          <id>54412634</id>
+          <uuid>c479d79a-9ae3-4444-b4f0-60f370f7c6cb</uuid>
+          <number>38</number>
+          <date>16.12.2023</date>
+          <time>16:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52768738</id>
+            <uuid>5386388d-f5e3-477b-87f2-f0d06530c389</uuid>
+            <name>TV Gerthe II</name>
+            <club>TV Gerthe 1911 e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52768755</id>
+            <uuid>44fbc5be-dd36-4b5d-9626-6387c669b7b7</uuid>
+            <seasonTeamId>52768755</seasonTeamId>
+            <name>TV Hörde III</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>Turnverein Hörde 1861 e.V.</name>
+              <shortName>TVH</shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>38908729</id>
+              <name>Werner-von-Siemens-Schule</name>
+              <street>Haydnstr. 3</street>
+              <extraField>-</extraField>
+              <postalCode>44805</postalCode>
+              <city>Bochum</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>1</winner>
+              <setPoints>3:2</setPoints>
+              <ballPoints>99:91</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>18:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>20</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:18</points>
+                      <winner>TEAM1</winner>
+                      <duration>20</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:15</points>
+                      <winner>TEAM1</winner>
+                      <duration>18</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>16:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>19</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>15:8</points>
+                      <winner>TEAM1</winner>
+                      <duration>13</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>90</netDuration>
+        </match>
+        <match>
+          <id>54412653</id>
+          <uuid>8f6fd0e6-d0a8-4451-8f1a-4f8f3daa0853</uuid>
+          <number>44</number>
+          <date>13.01.2024</date>
+          <time>15:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52768728</id>
+            <uuid>f9e7fd06-13da-4bb1-9ed0-31bf838cf6ca</uuid>
+            <name>1. VV Holzwickede</name>
+            <club>1. Volleyball-Verein Holzwickede 1986 e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52768743</id>
+            <uuid>afc71533-e534-4310-a01c-313090917385</uuid>
+            <seasonTeamId>52768743</seasonTeamId>
+            <name>TV Gerthe</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TV Gerthe 1911 e.V.</name>
+              <shortName></shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>38908717</id>
+              <name>Hilgenbaumhalle</name>
+              <street>Opherdicker Str. 44</street>
+              <extraField>-</extraField>
+              <postalCode>59439</postalCode>
+              <city>Holzwickede</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>2</winner>
+              <setPoints>2:3</setPoints>
+              <ballPoints>98:108</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>19:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>5</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>23:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>25</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:22</points>
+                      <winner>TEAM1</winner>
+                      <duration>27</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:21</points>
+                      <winner>TEAM1</winner>
+                      <duration>24</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>6:15</points>
+                      <winner>TEAM2</winner>
+                      <duration>12</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>93</netDuration>
+        </match>
+        <match>
+          <id>54412663</id>
+          <uuid>070291cd-c229-4151-bb70-b9ede3bd410d</uuid>
+          <number>47</number>
+          <date>20.01.2024</date>
+          <time>15:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <name>TuS Herten II</name>
+            <club>TuS Herten Volleyball e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52768728</id>
+            <uuid>f9e7fd06-13da-4bb1-9ed0-31bf838cf6ca</uuid>
+            <seasonTeamId>52768728</seasonTeamId>
+            <name>1. VV Holzwickede</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>1. Volleyball-Verein Holzwickede 1986 e.V.</name>
+              <shortName></shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>15140213</id>
+              <name>Knappenhalle</name>
+              <street>Paschenbergstr. 95</street>
+              <extraField>-</extraField>
+              <postalCode>45699</postalCode>
+              <city>Herten</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>1</winner>
+              <setPoints>3:1</setPoints>
+              <ballPoints>98:82</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>25:20</points>
+                      <winner>TEAM1</winner>
+                      <duration>21</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:20</points>
+                      <winner>TEAM1</winner>
+                      <duration>23</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>23:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>26</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:17</points>
+                      <winner>TEAM1</winner>
+                      <duration>23</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>93</netDuration>
+        </match>
+        <match>
+          <id>54412676</id>
+          <uuid>96e3d084-98b5-4cf3-a763-b2d8c302dcb6</uuid>
+          <number>51</number>
+          <date>28.01.2024</date>
+          <time>11:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52838143</id>
+            <uuid>2bbcbb0d-7abe-401d-92fa-c57ae0db5462</uuid>
+            <name>TV Gladbeck II</name>
+            <club>TV Gladbeck 1912 e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52838143</id>
+            <uuid>2bbcbb0d-7abe-401d-92fa-c57ae0db5462</uuid>
+            <seasonTeamId>52838143</seasonTeamId>
+            <name>TV Gladbeck II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TV Gladbeck 1912 e.V.</name>
+              <shortName>Gladb</shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>9471508</id>
+              <name>Artur-Schirrmacher-Sporthalle</name>
+              <street>Konrad-Adenauer-Allee 1</street>
+              <extraField>-</extraField>
+              <postalCode>45964</postalCode>
+              <city>Gladbeck</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>2</winner>
+              <setPoints>0:3</setPoints>
+              <ballPoints>43:75</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>13:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>19</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>19:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>21</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>11:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>16</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>56</netDuration>
+        </match>
+        <match>
+          <id>54412689</id>
+          <uuid>05cf9791-5202-44bc-a33b-6e7e7245f887</uuid>
+          <number>55</number>
+          <date>03.02.2024</date>
+          <time>12:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <name>TuS Herten II</name>
+            <club>TuS Herten Volleyball e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52769974</id>
+            <uuid>13b7a430-bac9-45ba-8dc6-b37375e85fe9</uuid>
+            <seasonTeamId>52769974</seasonTeamId>
+            <name>TSC Eintracht Dortmund</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TSC Eintracht Dortmund 1848/95 e.V.</name>
+              <shortName></shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>15140213</id>
+              <name>Knappenhalle</name>
+              <street>Paschenbergstr. 95</street>
+              <extraField>-</extraField>
+              <postalCode>45699</postalCode>
+              <city>Herten</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>1</winner>
+              <setPoints>3:2</setPoints>
+              <ballPoints>105:91</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>20:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>22</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>20:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>25</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:15</points>
+                      <winner>TEAM1</winner>
+                      <duration>20</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:17</points>
+                      <winner>TEAM1</winner>
+                      <duration>24</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>15:9</points>
+                      <winner>TEAM1</winner>
+                      <duration>11</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>102</netDuration>
+        </match>
+        <match>
+          <id>54412705</id>
+          <uuid>a3d3a1e0-742b-4160-8279-37ed8f2d5a00</uuid>
+          <number>60</number>
+          <date>17.02.2024</date>
+          <time>13:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52768755</id>
+            <uuid>44fbc5be-dd36-4b5d-9626-6387c669b7b7</uuid>
+            <name>TV Hörde III</name>
+            <club>Turnverein Hörde 1861 e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52768752</id>
+            <uuid>e3ab938a-c6d8-4194-a64f-7289f88cafea</uuid>
+            <seasonTeamId>52768752</seasonTeamId>
+            <name>EVC Massen</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>EVC Massen e.V.</name>
+              <shortName></shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>12503687</id>
+              <name>Phoenix-Gymnasium</name>
+              <street>Seekante 12</street>
+              <extraField>-</extraField>
+              <postalCode>44263</postalCode>
+              <city>Dortmund</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>1</winner>
+              <setPoints>3:0</setPoints>
+              <ballPoints>75:62</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>25:23</points>
+                      <winner>TEAM1</winner>
+                      <duration>29</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:16</points>
+                      <winner>TEAM1</winner>
+                      <duration>17</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:23</points>
+                      <winner>TEAM1</winner>
+                      <duration>24</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>70</netDuration>
+        </match>
+        <match>
+          <id>54412709</id>
+          <uuid>05b71912-ff0f-4923-8a2e-70b03c2cbc93</uuid>
+          <number>61</number>
+          <date>27.02.2024</date>
+          <time>20:30</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52768738</id>
+            <uuid>5386388d-f5e3-477b-87f2-f0d06530c389</uuid>
+            <name>TV Gerthe II</name>
+            <club>TV Gerthe 1911 e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52768738</id>
+            <uuid>5386388d-f5e3-477b-87f2-f0d06530c389</uuid>
+            <seasonTeamId>52768738</seasonTeamId>
+            <name>TV Gerthe II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TV Gerthe 1911 e.V.</name>
+              <shortName></shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>38908729</id>
+              <name>Werner-von-Siemens-Schule</name>
+              <street>Haydnstr. 3</street>
+              <extraField>-</extraField>
+              <postalCode>44805</postalCode>
+              <city>Bochum</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>1</winner>
+              <setPoints>3:2</setPoints>
+              <ballPoints>112:99</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>25:14</points>
+                      <winner>TEAM1</winner>
+                      <duration>43</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:20</points>
+                      <winner>TEAM1</winner>
+                      <duration>24</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>22:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>26</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>24:26</points>
+                      <winner>TEAM2</winner>
+                      <duration>26</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>16:14</points>
+                      <winner>TEAM1</winner>
+                      <duration>17</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>136</netDuration>
+        </match>
+        <match>
+          <id>54412738</id>
+          <uuid>bd7f9388-0d58-4a77-9a56-7f602908b9b6</uuid>
+          <number>70</number>
+          <date>23.03.2024</date>
+          <time>15:00</time>
+          <delayPossible>false</delayPossible>
+          <decidingMatch>false</decidingMatch>
+          <indefinitelyRescheduled>false</indefinitelyRescheduled>
+          <gameReassessed>false</gameReassessed>
+          <host>
+            <id>52768743</id>
+            <uuid>afc71533-e534-4310-a01c-313090917385</uuid>
+            <name>TV Gerthe</name>
+            <club>TV Gerthe 1911 e.V.</club>
+          </host>
+          <team>
+            <number>1</number>
+            <id>52838760</id>
+            <uuid>bd2a21d7-5521-480e-9f0b-15d29c623d77</uuid>
+            <seasonTeamId>52838760</seasonTeamId>
+            <name>TuS Herten II</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>TuS Herten Volleyball e.V.</name>
+              <shortName>TuSH</shortName>
+            </club>
+          </team>
+          <team>
+            <number>2</number>
+            <id>52838305</id>
+            <uuid>2379d034-7105-4df4-aa4b-7e5046360b99</uuid>
+            <seasonTeamId>52838305</seasonTeamId>
+            <name>Lüner SV</name>
+            <shortName></shortName>
+            <clubCode></clubCode>
+            <club>
+              <name>Lüner SV e.V.</name>
+              <shortName></shortName>
+            </club>
+          </team>
+          <matchSeries>
+  <id>52768717</id>
+  <uuid>9bad5644-2ce0-4a8f-8fd9-b10d89edbc08</uuid>
+  <allSeasonId>283d02bd-bdba-403a-a57d-1e78898c318d</allSeasonId>
+  <name>Landesliga 5 Frauen</name>
+  <shortName>LL5F</shortName>
+  <type>League</type>
+    <updated>2024-06-07 10:03:51.828</updated>
+    <structureUpdated>2024-04-25 17:51:47.627</structureUpdated>
+    <resultsUpdated>2024-04-21 20:33:56.463</resultsUpdated>
+    <season>
+      <id>52761843</id>
+      <uuid>dfcaac22-776e-4c3c-b3a8-0c34c5a51558</uuid>
+      <name>2023/24</name>
+    </season>
+    <hierarchy>
+      <id>52768687</id>
+      <uuid>d408ef7d-bb56-48a3-9b06-7e442726c879</uuid>
+      <name>Westfalen-Süd</name>
+      <shortName>WFS</shortName>
+      <hierarchyLevel>3</hierarchyLevel>
+    </hierarchy>
+    <fullHierarchy>
+        <hierarchy>
+          <id>52768687</id>
+          <name>Westfalen-Süd</name>
+          <shortName>WFS</shortName>
+          <hierarchyLevel>3</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52768212</id>
+          <name>Landesliga</name>
+          <shortName>Landesliga</shortName>
+          <hierarchyLevel>2</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767367</id>
+          <name>Spielbetrieb Erwachsene</name>
+          <shortName>Erwachsene WVV</shortName>
+          <hierarchyLevel>1</hierarchyLevel>
+        </hierarchy>
+        <hierarchy>
+          <id>52767366</id>
+          <name>Westdeutscher Volleyball-Verband</name>
+          <shortName>WVV</shortName>
+          <hierarchyLevel>0</hierarchyLevel>
+        </hierarchy>
+    </fullHierarchy>
+    <association>
+      <name></name>
+      <shortName></shortName>
+    </association>
+          </matchSeries>
+          <location>
+              <id>38908729</id>
+              <name>Werner-von-Siemens-Schule</name>
+              <street>Haydnstr. 3</street>
+              <extraField>-</extraField>
+              <postalCode>44805</postalCode>
+              <city>Bochum</city>
+              <note>-</note>
+          </location>
+          <referees>
+          </referees>
+            <results>
+              <winner>1</winner>
+              <setPoints>3:1</setPoints>
+              <ballPoints>96:82</ballPoints>
+              <sets>
+                    <set>
+                      <number>1</number>
+                      <points>25:22</points>
+                      <winner>TEAM1</winner>
+                      <duration>21</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>21:25</points>
+                      <winner>TEAM2</winner>
+                      <duration>21</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:14</points>
+                      <winner>TEAM1</winner>
+                      <duration>17</duration>
+                    </set>
+                    <set>
+                      <number>1</number>
+                      <points>25:21</points>
+                      <winner>TEAM1</winner>
+                      <duration>24</duration>
+                    </set>
+              </sets>
+              <verified>true</verified>
+            </results>
+            <spectators>-</spectators>
+            <netDuration>83</netDuration>
+        </match>
+    </matches>

@@ -1,17 +1,30 @@
 {
-    "name": "renao/sams-wordpress-plugin",
-    "description": "WordPress Plugin to integrate SAMS tables and fixtures into WordPress content",
-    "require-dev": {
-        "phpunit/phpunit": ">=9.0.0"
+    "name": "renao/sams-plugin",
+    "description": "WordPress Plugin to integrate rankings and fixtures from SAMS into WordPress content",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "René Siemer",
+            "email": "me@renao.de"
+        }
+    ],
+
+    "config": {
+        "vendor-dir": "lib"
     },
 
     "autoload": {
-        "classmap": [
-             "app",
-             "app/remote",
-             "app/remote/uris",
-             "app/models",
-             "app/presenters"
-         ]
-     }
+        "psr-4": {
+            "SAMSPlugin\\": "src/"
+        }
+    },
+  
+    "autoload-dev": {
+        "psr-4": {
+            "SAMSPlugin\\Tests\\": "tests/"
+        }
+    },
+    "require":{
+        "ext-simplexml": "*"
+    }
 }
