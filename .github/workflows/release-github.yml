@@ -16,10 +16,10 @@ jobs:
       with:
         type: 'zip'
         filename: 'release.zip'
-        exclusions: '*.git* /*node_modules/* .editorconfig phpunit.xml.dist composer.json composer.lock .wp-env.json'
+        exclusions: '*.git* /*node_modules/* .editorconfig phpunit.xml.dist composer.json composer.lock .wp-env.json /tests/*'
     
-    - name: Release zip file on GitHub
-      uses: ncipollo/release-action@v1.12.0
-      with:
-        artifacts: "release.zip"
-        token: ${{ secrets.GITHUB_TOKEN }}
+#    - name: Release zip file on GitHub
+#      uses: ncipollo/release-action@v1.12.0
+#      with:
+#        artifacts: "release.zip"
+#        token: ${{ secrets.GITHUB_TOKEN }}
