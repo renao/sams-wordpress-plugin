@@ -48,9 +48,6 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Verify Composer vendor/autload
-        run: ls ./vendor/
-
       - name: Install wp-env
         run: npm install --global @wordpress/env
 
