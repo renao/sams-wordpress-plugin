@@ -16,7 +16,7 @@ class FixturesRenderer {
             $fixtures = new Fixtures($fetchedXml);
             return FixturesPresenter::render($fixtures);
         } else {
-            return "Fixtures not found (MatchSeriesID: $matchSeriesId - TeamID: $teamId API-Key: " . $apiKey . ")";
+            return "Fixtures not found (MatchSeriesID: $matchSeriesId - TeamID: $teamId)";
         }
     }
 }

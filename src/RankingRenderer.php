@@ -16,7 +16,7 @@ class RankingRenderer {
             $table = new Ranking($fetchedXml);
             return RankingPresenter::render($table);
         } else {
-            return "Ranking not found (Match Series ID: $matchSeriesId - API Key $apiKey)";
+            return "Ranking not found (Match Series ID: $matchSeriesId)";
         }
     }
 }
