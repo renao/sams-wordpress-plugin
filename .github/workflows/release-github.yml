@@ -7,17 +7,19 @@ on:
 
 jobs:
   build:
-    name: Build release zip
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
+    - uses: actions/checkout@master
 
-    - name: Build plugin
-      run: |
-        composer install --no-dev
-
-    - name: Generate zip
-      uses: 10up/action-wordpress-plugin-build-zip@stable
-      env:
-        SLUG: sams-plugin
+    - name: Archive Release
+      uses: thedoctor0/zip-release@0.7.5
+      with:
+        type: 'zip'
+        filename: 'release.zip'
+        exclusions: '*.git* /*node_modules/* .editorconfig phpunit.xml.dist composer.json composer.lock .wp-env.json'
+    
+    - name: Release zip file on GitHub
+      uses: ncipollo/release-action@v1.12.0
+      with:
+        artifacts: "release.zip"
+        token: ${{ secrets.GITHUB_TOKEN }}
