@@ -55,7 +55,7 @@ jobs:
         run: wp-env start
 
       - name: Run PHPUnit tests
-        run: wp-env run tests 'vendor/bin/phpunit'
+        run: wp-env run tests-cli phpunit
 
       - name: Stop wp-env
         run: wp-env stop
