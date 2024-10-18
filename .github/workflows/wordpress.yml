@@ -55,7 +55,7 @@ jobs:
         run: wp-env start
 
       - name: Run PHPUnit tests
-        run: wp-env run tests-cli phpunit
+        run: wp-env run tests-cli wp-content/plugins/sams-wordpress-plugin/lib/bin/phpunit wp-content/plugins/sams-wordpress-plugin
 
       - name: Stop wp-env
         run: wp-env stop
