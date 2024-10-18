@@ -7,7 +7,7 @@
     </testsuites>
     <coverage>
         <include>
-            <directory>./includes</directory>
+            <directory>./src</directory>
         </include>
     </coverage>
 </phpunit>

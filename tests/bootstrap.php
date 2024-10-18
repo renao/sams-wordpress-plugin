@@ -1,11 +1,11 @@
 <?php
 // WP_TESTS_PHPUNIT_POLYFILLS_PATH definieren
-if ( file_exists( __DIR__ . '/../vendor/autoload.php' ) ) {
-    require_once __DIR__ . '/../vendor/autoload.php'; // Pfad zur Composer-Autoload-Datei
+if ( file_exists( __DIR__ . '/../lib/autoload.php' ) ) {
+    require_once __DIR__ . '/../lib/autoload.php'; // Pfad zur Composer-Autoload-Datei
 }
 
 // WP_TESTS_PHPUNIT_POLYFILLS_PATH definieren
-define( 'WP_TESTS_PHPUNIT_POLYFILLS_PATH', __DIR__ . '/../vendor/yoast/phpunit-polyfills/autoload.php' );
+define( 'WP_TESTS_PHPUNIT_POLYFILLS_PATH', __DIR__ . '/../lib/yoast/phpunit-polyfills/autoload.php' );
 
 
 // WordPress-Testumgebung initialisieren
@@ -15,7 +15,7 @@ if ( ! $_tests_dir ) {
     $_tests_dir = '/var/www/html/wp-content/plugins/wordpress-tests-lib';
 }
 
-require_once $_tests_dir . '/includes/functions.php';
+require_once $_tests_dir . '/src/functions.php';
 
 // Manuelles Laden des Plugins
 function _manually_load_plugin() {
@@ -24,5 +24,5 @@ function _manually_load_plugin() {
 tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );
 
 // WordPress-Testumgebung starten
-require $_tests_dir . '/includes/bootstrap.php';
+require $_tests_dir . '/src/bootstrap.php';
 ?>
