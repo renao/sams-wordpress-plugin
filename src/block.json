@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/sams-ranking",
+	"version": "0.1.0",
+	"title": "SAMS Ranking",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Ranking from SAMS service",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "sams-ranking",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

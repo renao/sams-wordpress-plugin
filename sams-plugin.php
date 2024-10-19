@@ -26,4 +26,13 @@ use SAMSPlugin\Shortcodes\RankingShortcode;
 add_shortcode( 'samsfixtures', array(new FixturesShortcode(), 'fetch_and_render_sams_fixtures'));
 add_shortcode( 'samstable', array(new RankingShortcode(), 'fetch_and_render_sams_table') );
 
+
+function create_block_sams_ranking_block_init() {
+    register_block_type( __DIR__ . '/build' );
+}
+
+add_action( 'init', __NAMESPACE__ . '\\create_block_sams_ranking_block_init' );
+
+
+
 ?>
