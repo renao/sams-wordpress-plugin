@@ -28,6 +28,14 @@ jobs:
       - name: Install Composer dependencies
         run: composer install --no-dev --prefer-dist --no-progress --no-suggest
 
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Node Modules
+        run: npm install
+
   #test:
   #  runs-on: ubuntu-latest
 #
