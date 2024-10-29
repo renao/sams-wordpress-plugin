@@ -23,11 +23,13 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v4
       with:
-            node-version: '22'
+        node-version: '22'
+    
+    - name: "Install JS dependencies"
+      run: npm install
 
     - name: Build Javascript
       run: npm build
-
 
     - name: Archive Pipeline Build
       uses: thedoctor0/zip-release@0.7.5
