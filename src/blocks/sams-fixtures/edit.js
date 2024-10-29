@@ -32,7 +32,7 @@ import './editor.scss';
 export default function Edit() {
 	return (
 		<p { ...useBlockProps() }>
-			{ __( 'SAMS Ranking in the editor view', 'sams-plugin' ) }
+			{ __( 'Sams Fixtures – hello from the editor!', 'sams-plugin' ) }
 		</p>
 	);
 }

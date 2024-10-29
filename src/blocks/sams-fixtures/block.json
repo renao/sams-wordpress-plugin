@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "renao/sams-fixtures",
+	"version": "0.1.0",
+	"title": "SAMS Fixtures",
+	"category": "widgets",
+	"icon": "",
+	"description": "Displays fixtures from a SAMS results server",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "sams-plugin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
