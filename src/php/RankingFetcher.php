@@ -4,7 +4,6 @@ namespace SAMSPlugin;
 use SAMSPlugin\Remote\URIs\RankingURI;
 use SAMSPlugin\Remote\XMLFetcher;
 use SAMSPlugin\Models\Ranking;
-use SAMSPlugin\Presenters\RankingPresenter;
 
 class RankingFetcher {
 
