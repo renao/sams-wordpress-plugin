@@ -7,8 +7,8 @@ use SAMSPlugin\Models\Ranking;
 
 class RankingFetcher {
 
-    public static function fetch($apiKey, $matchSeriesId) {
-        $tableUri = new RankingURI($apiKey, $matchSeriesId);
+    public static function fetch($baseUrl, $apiKey, $matchSeriesId) {
+        $tableUri = new RankingURI($baseUrl, $apiKey, $matchSeriesId);
         $fetcher = new XMLFetcher();
         $fetchedXml = $fetcher->fetch($tableUri->toString());
         if (\is_a($fetchedXml, "SimpleXMLElement")) {

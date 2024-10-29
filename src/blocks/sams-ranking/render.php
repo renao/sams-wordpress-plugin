@@ -11,7 +11,7 @@ if (isset($attributes)
 	&& isset($attributes['matchSeriesId'])) {
 
 	$fetcher = new RankingFetcher();
-	$ranking = $fetcher->fetch($attributes['apiKey'], $attributes['matchSeriesId']);
+	$ranking = $fetcher->fetch($attributes['associationUrl'], $attributes['apiKey'], $attributes['matchSeriesId']);
 ?>
 
 <div <?php echo get_block_wrapper_attributes(); ?>>
