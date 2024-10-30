@@ -2,14 +2,14 @@
 
 namespace SAMSPlugin\Remote;
 
-use SAMSPlugin\Remote\FileCacher;
+use SAMSPlugin\Remote\TransientCacher;
 
 class XMLFetcher {
 
     public function fetch($xmlUri) {
-        $cacher = new FileCacher($xmlUri);
-        $xmlContent = $cacher->loadCache();
-        return simplexml_load_string($xmlContent);
+        $cacher = new TransientCacher($xmlUri);
+        $cachedContent = $cacher->loadCache();
+        return $cachedContent;
     }
 }
 ?>
