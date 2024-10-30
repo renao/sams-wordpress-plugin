@@ -1,29 +1,35 @@
 <?php
-/*
-Plugin Name:    SAMS Plugin
-Plugin URI:     https://github.com/renao/sams-wordpress-plugin
-Description:    Integrate rankings and fixtures from the official german volleyball results service SAMS.
-Author:         René Siemer
-Authors URI:    https://github.com/renao
-License:        GPLv3
-License URI:    https://www.gnu.org/licenses/gpl-3.0.html
-Text Domain:    sams-plugin
-Version:        0.2.0
+/**
+ * Plugin Name:       SAMS Plugin
+ * Description:       Displays fixtures and rankings from a SAMS results system
+ * Requires at least: 6.6
+ * Requires PHP:      7.2
+ * Version:           0.1.0
+ * Author:            The WordPress Contributors
+ * License:           GPL-2.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       sams-plugin
+ *
+ * @package CreateBlock
+ */
 
-*/
-namespace SAMSPlugin;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+if ( file_exists( __DIR__ . '/lib/autoload.php' ) ) {
 
-$autoload_file_path = __DIR__ . '/lib/autoload.php';
-if ( file_exists($autoload_file_path) ) {
-    require_once $autoload_file_path;
-} else {
-    throw new Exception('Autoload file missing', $autoload_file_path);
+    require_once __DIR__ . '/lib/autoload.php';
 }
 
-use SAMSPlugin\Shortcodes\FixturesShortcode;
-use SAMSPlugin\Shortcodes\RankingShortcode;
-
-add_shortcode( 'samsfixtures', array(new FixturesShortcode(), 'fetch_and_render_sams_fixtures'));
-add_shortcode( 'samstable', array(new RankingShortcode(), 'fetch_and_render_sams_table') );
-
-?>
+/**
+ * Registers the block using the metadata loaded from the `block.json` file.
+ * Behind the scenes, it registers also all assets so they can be enqueued
+ * through the block editor in the corresponding context.
+ *
+ * @see https://developer.wordpress.org/reference/functions/register_block_type/
+ */
+function create_block_wp_sams_plugin_block_init() {
+	register_block_type( __DIR__ . '/build/blocks/sams-ranking' );
+	register_block_type( __DIR__ . '/build/blocks/sams-fixtures' );
+}
+add_action( 'init', 'create_block_wp_sams_plugin_block_init' );

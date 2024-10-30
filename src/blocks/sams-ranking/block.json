@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "renao/sams-ranking",
+	"version": "0.1.0",
+	"title": "SAMS Ranking",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Displays a ranking from a SAMS results server",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"apiKey": {
+			"type": "string"
+		},
+		"associationUrl": {
+			"type": "string"
+		},
+		"matchSeriesId": {
+			"type": "string"
+		}
+	},
+	"textdomain": "sams-plugin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
