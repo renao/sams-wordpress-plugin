@@ -38,8 +38,8 @@ jobs:
         filename: release-${{ github.run_id }}.zip
         exclusions: '*.git* /*node_modules/* .editorconfig phpunit.xml.dist composer.json composer.lock .wp-env.json /src/* /tests/*'
     
-    - name: Upload release.zip
+    - name: Upload Pipeline Release
       uses: actions/upload-artifact@v4
       with:
-        name: SAMS Plugin (zip file)
+        name: Release ${{ github.run_id }} (SAMS Plugin)
         path: release-${{ github.run_id }}.zip
