@@ -36,7 +36,7 @@ jobs:
       with:
         type: 'zip'
         filename: release-${{ github.run_id }}.zip
-        exclusions: '*.git* /*node_modules/* .editorconfig phpunit.xml.dist composer.json composer.lock .wp-env.json /tests/*'
+        exclusions: '*.git* /*node_modules/* .editorconfig phpunit.xml.dist composer.json composer.lock .wp-env.json /src/* /tests/*'
     
     - name: Upload release.zip
       uses: actions/upload-artifact@v4
