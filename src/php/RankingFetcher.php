@@ -8,14 +8,16 @@ use SAMSPlugin\Models\Ranking;
 class RankingFetcher {
 
     public static function fetch($baseUrl, $apiKey, $matchSeriesId) {
-        $tableUri = new RankingURI($baseUrl, $apiKey, $matchSeriesId);
+        $rankingUri = new RankingURI($baseUrl, $apiKey, $matchSeriesId);
         $fetcher = new XMLFetcher();
-        $fetchedXml = $fetcher->fetch($tableUri->toString());
-        if (\is_a($fetchedXml, "SimpleXMLElement")) {
-            $table = new Ranking($fetchedXml);
-            return $table;
+        $fetchedContent = $fetcher->fetch($rankingUri->toString());
+        
+        if (!is_wp_error($fetchedContent)) {
+            $xmlContent = simplexml_load_string(wp_remote_retrieve_body($fetchedContent));    
+            $ranking = new Ranking($xmlContent);
+            return $ranking;
         } else {
-            return "Ranking not found (Match Series ID: $matchSeriesId)";
+            return __("SAMS Ranking | Error loading ranking", "sams-plugin");
         }
     }
 }
