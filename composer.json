@@ -18,13 +18,13 @@
 
     "autoload": {
         "psr-4": {
-            "SAMSPlugin\\": "src/php/"
+            "SAMSPlugin\\": "build/php/"
         }
     },
   
     "autoload-dev": {
         "psr-4": {
-            "SAMSPlugin\\Tests\\": "src/php/tests/"
+            "SAMSPlugin\\Tests\\": "/tests/"
         }
     },
     "require":{
