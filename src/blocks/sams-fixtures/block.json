@@ -11,6 +11,20 @@
 	"supports": {
 		"html": false
 	},
+	"attributes": {
+		"apiKey": {
+			"type": "string"
+		},
+		"associationUrl": {
+			"type": "string"
+		},
+		"matchSeriesId": {
+			"type": "string"
+		},
+		"teamId": {
+			"type": "string"
+		}
+	},
 	"textdomain": "sams-plugin",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",

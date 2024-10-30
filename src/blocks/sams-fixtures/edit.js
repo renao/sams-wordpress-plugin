@@ -11,7 +11,9 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
+
+import { PanelBody, TextControl } from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -29,10 +31,57 @@ import './editor.scss';
  *
  * @return {Element} Element to render.
  */
-export default function Edit() {
+export default function Edit( { attributes, setAttributes } )
+{
+	const { associationUrl, apiKey, matchSeriesId, teamId } = attributes;
 	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Sams Fixtures – hello from the editor!', 'sams-plugin' ) }
-		</p>
-	);
+        <>
+            <InspectorControls>
+                <PanelBody title={ __( 'Settings', 'sams-plugin' ) }>
+					<TextControl
+						label={ __(
+							'Association URL',
+							'sams-plugin'
+						) }
+						value={ associationUrl || '' }
+                        onChange={ ( value ) =>
+                        	setAttributes( { associationUrl: value } )
+						}
+					/>
+					<TextControl
+						label={ __(
+							'API Key',
+							'sams-plugin'
+						) }
+						value={ apiKey || '' }
+                        onChange={ ( value ) =>
+                        	setAttributes( { apiKey: value } )
+						}
+					/>
+					<TextControl
+						label={ __(
+							'MatchSeriesId',
+							'sams-plugin'
+						) }
+						value={ matchSeriesId || '' }
+                        onChange={ ( value ) =>
+                        	setAttributes( { matchSeriesId: value } )
+						}
+					/>
+
+					<TextControl
+						label={ __(
+							'TeamId',
+							'sams-plugin'
+						) }
+						value={ teamId || '' }
+                        onChange={ ( value ) =>
+                        	setAttributes( { teamId: value } )
+						}
+					/>
+                </PanelBody>
+            </InspectorControls>
+            <p { ...useBlockProps() }>SAMS Fixtures {  associationUrl }</p>
+        </>
+    );
 }

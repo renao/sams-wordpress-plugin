@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"title": "SAMS Ranking",
 	"category": "widgets",
-	"icon": "smiley",
+	"icon": "",
 	"description": "Displays a ranking from a SAMS results server",
 	"example": {},
 	"supports": {
