@@ -5,7 +5,7 @@ on:
       branches:
         - '**'
 jobs:
-  prepare:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -25,18 +25,11 @@ jobs:
       with:
         node-version: '22'
 
-  build:
-    runs-on: ubuntu-latest
-    steps:
     - name: "Install JS dependencies"
       run: npm install
 
     - name: Build Javascript
       run: npm run 
-      
-  release:
-    runs-on: ubuntu-latest
-    steps:
       
     - name: Archive Pipeline Build
       uses: thedoctor0/zip-release@0.7.5
