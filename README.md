@@ -47,7 +47,7 @@ The SAMS XML-interface is describes in the following wiki:
 
 ## License
 
-This piece of modern art is published with a GNU GPLv3 license. I will not take charge of any harm, damages or data losses that could be caused by this plugin. Use it on your own risk.
+This piece of modern art is published with a GNU GPLv2 license. I will not take charge of any harm, damages or data losses that could be caused by this plugin. Use it on your own risk.
 
 ## Contact and contributions
 

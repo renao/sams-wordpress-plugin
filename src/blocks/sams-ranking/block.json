@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 3,
+	"apiVersion": 2,
 	"name": "renao/sams-ranking",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"title": "SAMS Ranking",
 	"category": "widgets",
-	"icon": "",
-	"description": "Displays a ranking from a SAMS results server",
+	"icon": "analytics",
+	"description": "Includes a ranking from a SAMS result service",
 	"example": {},
 	"supports": {
 		"html": false
