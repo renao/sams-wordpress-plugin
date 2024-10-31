@@ -17,7 +17,7 @@ class RankingFetcher {
             $ranking = new Ranking($xmlContent);
             return $ranking;
         } else {
-            return __("SAMS Ranking | Error loading ranking", "sams-plugin");
+            return __("SAMS Ranking | Error loading ranking", "sams-integration");
         }
     }
 }

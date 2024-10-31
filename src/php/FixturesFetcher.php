@@ -17,7 +17,7 @@ class FixturesFetcher {
             $fixtures = new Fixtures($xmlContent);
             return $fixtures;
         } else {
-            return __("SAMS Fixtures | Error loading fixtures", "sams-plugin");
+            return __("SAMS Fixtures | Error loading fixtures", "sams-integration");
         }
     }
 }

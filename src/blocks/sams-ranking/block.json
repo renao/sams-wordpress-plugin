@@ -22,7 +22,7 @@
 			"type": "string"
 		}
 	},
-	"textdomain": "sams-plugin",
+	"textdomain": "sams-integration",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

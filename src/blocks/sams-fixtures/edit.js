@@ -37,11 +37,11 @@ export default function Edit( { attributes, setAttributes } )
 	return (
         <>
             <InspectorControls>
-                <PanelBody title={ __( 'Settings', 'sams-plugin' ) }>
+                <PanelBody title={ __( 'Settings', 'sams-integration' ) }>
 					<TextControl
 						label={ __(
 							'Association URL',
-							'sams-plugin'
+							'sams-integration'
 						) }
 						value={ associationUrl || '' }
                         onChange={ ( value ) =>
@@ -51,7 +51,7 @@ export default function Edit( { attributes, setAttributes } )
 					<TextControl
 						label={ __(
 							'API Key',
-							'sams-plugin'
+							'sams-integration'
 						) }
 						value={ apiKey || '' }
                         onChange={ ( value ) =>
@@ -61,7 +61,7 @@ export default function Edit( { attributes, setAttributes } )
 					<TextControl
 						label={ __(
 							'MatchSeriesId',
-							'sams-plugin'
+							'sams-integration'
 						) }
 						value={ matchSeriesId || '' }
                         onChange={ ( value ) =>
@@ -72,7 +72,7 @@ export default function Edit( { attributes, setAttributes } )
 					<TextControl
 						label={ __(
 							'TeamId',
-							'sams-plugin'
+							'sams-integration'
 						) }
 						value={ teamId || '' }
                         onChange={ ( value ) =>

@@ -10,7 +10,7 @@ class TransientCacher {
 
     public function __construct($uri, $invalidationTimeInSeconds = 300) {
         $this->uri = $uri;
-        $this->cacheKey = 'sams-plugin__' . rawurlencode($uri);
+        $this->cacheKey = 'sams-integration__' . rawurlencode($uri);
         $this->invalidationTimeInSeconds = $invalidationTimeInSeconds;
     }
 

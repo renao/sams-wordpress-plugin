@@ -16,12 +16,12 @@ if (isset($attributes)
 
 <div <?php echo get_block_wrapper_attributes(); ?>>
 <table class="sams-ranking">
-    <th class="rank"><?php esc_html_e('Rank', 'sams-plugin'); ?></th>
-    <th class="teamName"><?php esc_html_e('Team', 'sams-plugin'); ?></th>
-    <th class="games"><?php esc_html_e('Games', 'sams-plugin'); ?></th>
-    <th class="balls"><?php esc_html_e('Balls', 'sams-plugin'); ?></th>
-    <th class="sets"><?php esc_html_e('Sets', 'sams-plugin'); ?></th>
-    <th class="points"><?php esc_html_e('Points', 'sams-plugin'); ?></th>
+    <th class="rank"><?php esc_html_e('Rank', 'sams-integration'); ?></th>
+    <th class="teamName"><?php esc_html_e('Team', 'sams-integration'); ?></th>
+    <th class="games"><?php esc_html_e('Games', 'sams-integration'); ?></th>
+    <th class="balls"><?php esc_html_e('Balls', 'sams-integration'); ?></th>
+    <th class="sets"><?php esc_html_e('Sets', 'sams-integration'); ?></th>
+    <th class="points"><?php esc_html_e('Points', 'sams-integration'); ?></th>
 
 	<?php foreach ($ranking->rankingEntries as $entry) { ?>
 
@@ -40,7 +40,7 @@ if (isset($attributes)
 <?php
 } else {
 	// Display error message on invalid configuration
-	esc_html_e('Error in SAMS Ranking: Configuration missing or incomplete', 'sams-plugin');
+	esc_html_e('Error in SAMS Ranking: Configuration missing or incomplete', 'sams-integration');
 }
 	?>
 

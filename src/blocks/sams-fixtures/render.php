@@ -22,9 +22,9 @@ if (isset($attributes)
 
 <div <?php echo get_block_wrapper_attributes(); ?>>
 <table class="sams-fixtures">
-    <th class="date"><?php esc_html_e('Starts', 'sams-plugin'); ?></th>
-    <th class="fixtureName"><?php esc_html_e('Fixture', 'sams-plugin'); ?></th>
-    <th class="venue"><?php esc_html_e('Venue', 'sams-plugin'); ?></th>
+    <th class="date"><?php esc_html_e('Starts', 'sams-integration'); ?></th>
+    <th class="fixtureName"><?php esc_html_e('Fixture', 'sams-integration'); ?></th>
+    <th class="venue"><?php esc_html_e('Venue', 'sams-integration'); ?></th>
     
 	
 	<?php foreach ($fixtures->fixturesEntries as $fixture) { ?>
@@ -48,7 +48,7 @@ if (isset($attributes)
 <?php
 } else {
 	// Display error message on invalid configuration
-	esc_html_e('Error in SAMS Fixtures: Configuration missing or incomplete', 'sams-plugin');
+	esc_html_e('Error in SAMS Fixtures: Configuration missing or incomplete', 'sams-integration');
 }
 	?>
 

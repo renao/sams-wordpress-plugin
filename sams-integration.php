@@ -4,11 +4,11 @@
  * Description:       Displays fixtures and rankings from a SAMS results system
  * Requires at least: 5.6
  * Requires PHP:      7.2
- * Version:           1.0
+ * Version:           1.0.0
  * Author:            René Siemer
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       sams-plugin
+ * Text Domain:       sams-integration
  *
  * @package SAMSPlugin
  */

@@ -1,6 +1,6 @@
 {
-	"name": "sams-plugin",
-	"version": "0.1.0",
+	"name": "sams-integration",
+	"version": "1.0.0",
 	"description": "Displays fixtures and results from a SAMS results system",
 	"author": "René Siemer",
 	"license": "GPL-2.0-or-later",

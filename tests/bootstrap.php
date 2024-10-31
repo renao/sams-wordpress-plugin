@@ -18,7 +18,7 @@ require_once $_tests_dir . '/src/functions.php';
 
 // Manuelles Laden des Plugins
 function _manually_load_plugin() {
-    require dirname( dirname( __FILE__ ) ) . '/sams-plugin.php';
+    require dirname( dirname( __FILE__ ) ) . '/sams-integration.php';
 }
 tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );
 
