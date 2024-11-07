@@ -30,6 +30,9 @@ jobs:
 
     - name: Build Javascript
       run: npm run build
+
+    - name: OSSF Scorecard action
+      uses: ossf/scorecard-action@v2.4.0        
       
     - name: Archive Pipeline Build
       uses: thedoctor0/zip-release@0.7.5
