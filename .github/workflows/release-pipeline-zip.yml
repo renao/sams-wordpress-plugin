@@ -33,7 +33,7 @@ jobs:
     
     - name: Manipulations for WordPress Plugin Release
     # 1. Replace generated echos by escaped output
-      run: sed -i 's/echo \$err;/echo esc_html(\$err);/' vendor/autoload.php
+      run: sed -i 's/echo \$err;/echo esc_html(\$err);/' lib/autoload.php
       
     - name: Archive Pipeline Build
       uses: thedoctor0/zip-release@0.7.5
