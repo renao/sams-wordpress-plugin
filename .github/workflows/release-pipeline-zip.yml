@@ -35,6 +35,9 @@ jobs:
     # 1. Replace generated echos by escaped output
       run: sed -i 's/echo \$err;/echo esc_html(\$err);/' lib/autoload.php
       
+    - name: Prepare release folder
+      run: mkdir releases/
+
     - name: Archive Pipeline Build
       uses: thedoctor0/zip-release@0.7.5
       with:
