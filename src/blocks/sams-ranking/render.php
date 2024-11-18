@@ -26,12 +26,12 @@ if (isset($attributes)
 	<?php foreach ($ranking->rankingEntries as $entry) { ?>
 
 	<tr>
-		<td class="rank"><?php echo $entry->place; ?></td>
-		<td class="teamName"><?php echo $entry->teamName; ?></td>
-		<td class="games"><?php echo $entry->games; ?></td>
-		<td class="balls"><?php echo $entry->ballsPro . ':' . $entry->ballsCon; ?></td>
-		<td class="sets"><?php echo $entry->setsPro . ':' . $entry->setsCon; ?></td>
-		<td class="points"><?php echo $entry->points; ?></td>
+		<td class="rank"><?php esc_html_e($entry->place); ?></td>
+		<td class="teamName"><?php esc_html_e($entry->teamName); ?></td>
+		<td class="games"><?php esc_html_e($entry->games); ?></td>
+		<td class="balls"><?php esc_html_e($entry->ballsPro . ':' . $entry->ballsCon); ?></td>
+		<td class="sets"><?php esc_html_e($entry->setsPro . ':' . $entry->setsCon); ?></td>
+		<td class="points"><?php esc_html_e($entry->points); ?></td>
 	</tr>
 
 	<?php };?>

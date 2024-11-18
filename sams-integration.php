@@ -16,6 +16,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+
 if ( file_exists( __DIR__ . '/lib/autoload.php' ) ) {
 
     require_once __DIR__ . '/lib/autoload.php';
@@ -28,8 +29,8 @@ if ( file_exists( __DIR__ . '/lib/autoload.php' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_wp_sams_plugin_block_init() {
+function samsintegration_initialize_blocktypes() {
 	register_block_type( __DIR__ . '/build/blocks/sams-ranking' );
 	register_block_type( __DIR__ . '/build/blocks/sams-fixtures' );
 }
-add_action( 'init', 'create_block_wp_sams_plugin_block_init' );
+add_action( 'init', 'samsintegration_initialize_blocktypes' );
