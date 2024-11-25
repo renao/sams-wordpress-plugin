@@ -31,15 +31,15 @@ if (isset($attributes)
 
 	<tr>
     <td class="date">
-		<?php esc_html_e($fixture->date); ?>
+		<?php echo esc_html($fixture->date); ?>
         <br>
-		<?php esc_html_e($fixture->startTime); ?> Uhr
+		<?php echo esc_html($fixture->startTime); ?> Uhr
     </td>
     <td class="fixture">
-		<span class="fixture-name"> <?php esc_html_e($fixture->teamHome . " - " . $fixture->teamAway); ?></span>
-		<span class="fixture-result"><?php if ($fixture->hasResult()) { esc_html_e(" (" . $fixture->score . ")"); }; ?></span>
+		<span class="fixture-name"> <?php echo esc_html($fixture->teamHome . " - " . $fixture->teamAway); ?></span>
+		<span class="fixture-result"><?php if ($fixture->hasResult()) { echo esc_html(" (" . $fixture->score . ")"); }; ?></span>
 	</td>
-    <td class="venue"><?php esc_html_e($fixture->venue); ?></td>
+    <td class="venue"><?php echo esc_html($fixture->venue); ?></td>
 </tr>
 
 <?php };?>
