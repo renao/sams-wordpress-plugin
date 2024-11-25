@@ -33,7 +33,7 @@ jobs:
     
     - name: Manipulations for WordPress Plugin Release
     # 1. Replace generated echos by escaped output
-      run: sed -i 's/echo \$err;/echo esc_html(\$err);/' lib/autoload.php
+      run: sed -i 's/echo \$err;/echo esc_html(\$err);/' build/lib/autoload.php
 
     - name: Generate release zip-file
       run: npm run plugin-zip && mv sams-integration.zip sams-integration-${{ github.run_id }}-snapshot.zip
