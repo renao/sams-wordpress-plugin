@@ -18,7 +18,7 @@ jobs:
         extensions: simplexml
 
     - name: Install Composer dependencies
-      run: composer install
+      run: composer install --no-dev
 
     - name: Install Node.js
       uses: actions/setup-node@v4
