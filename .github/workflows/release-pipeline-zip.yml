@@ -34,19 +34,12 @@ jobs:
     - name: Manipulations for WordPress Plugin Release
     # 1. Replace generated echos by escaped output
       run: sed -i 's/echo \$err;/echo esc_html(\$err);/' lib/autoload.php
-      
-    - name: Prepare release folder
-      run: mkdir releases/
 
-    - name: Archive Pipeline Build
-      uses: thedoctor0/zip-release@0.7.5
-      with:
-        type: 'zip'
-        filename: releases/snapshot-${{ github.run_id }}.zip
-        exclusions: '*.git* /*node_modules/* .editorconfig phpunit.xml.dist composer.json composer.lock .wp-env.json /src/* /tests/* package.json package-lock.json /assets/*'
-    
+    - name: Generate release zip-file
+      run: npm run plugin-zip && mv sams-integration.zip sams-integration-${{ github.run_id }}-snapshot.zip
+
     - name: Upload Pipeline Release
       uses: actions/upload-artifact@v4
       with:
-        name: Release ${{ github.run_id }} (SAMS Plugin)
-        path: releases/snapshot-${{ github.run_id }}.zip
+        name: SAMS Integration ${{ github.run_id }}
+        path: 
