@@ -17,9 +17,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if ( file_exists( __DIR__ . '/lib/autoload.php' ) ) {
+if ( file_exists( __DIR__ . '/build/lib/autoload.php' ) ) {
 
-    require_once __DIR__ . '/lib/autoload.php';
+    require_once __DIR__ . '/build/lib/autoload.php';
 }
 
 /**
