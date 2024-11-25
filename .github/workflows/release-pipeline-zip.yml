@@ -18,7 +18,9 @@ jobs:
         extensions: simplexml
 
     - name: Install Composer dependencies
-      run: composer install --no-dev
+      run: |
+        composer install --no-dev
+        ls
 
     - name: Install Node.js
       uses: actions/setup-node@v4
@@ -36,10 +38,12 @@ jobs:
     #  run: sed -i 's/echo \$err;/echo esc_html(\$err);/' build/lib/autoload.php
 
     - name: Generate release zip-file
-      run: npm run plugin-zip && mv sams-integration.zip sams-integration-${{ github.run_id }}-snapshot.zip
+      run: |
+        npm run plugin-zip 
+        mv sams-integration.zip sams-integration-${{ github.run_id }}-snapshot.zip
 
     - name: Upload Pipeline Release
       uses: actions/upload-artifact@v4
       with:
         name: SAMS Integration ${{ github.run_id }}
-        path: 
+        path: sams-integration-${{ github.run_id }}-snapshot.zip
