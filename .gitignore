@@ -172,3 +172,5 @@ dist
 
 # cache files
 *.cache
+
+*.zip

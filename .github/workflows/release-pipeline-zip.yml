@@ -17,9 +17,6 @@ jobs:
         tools: composer, phpunit
         extensions: simplexml
 
-    - name: Install Composer dependencies
-      run: composer install
-
     - name: Install Node.js
       uses: actions/setup-node@v4
       with:
@@ -31,22 +28,22 @@ jobs:
     - name: Build Javascript
       run: npm run build
     
+      # Needs to run _after_ JS build - JS build copies php files to the build-directory
+    - name: Install Composer dependencies
+      run: composer install --no-dev
+
     - name: Manipulations for WordPress Plugin Release
     # 1. Replace generated echos by escaped output
-      run: sed -i 's/echo \$err;/echo esc_html(\$err);/' lib/autoload.php
-      
-    - name: Prepare release folder
-      run: mkdir releases/
+      run: sed -i 's/echo \$err;/echo esc_html(\$err);/' build/lib/autoload.php
 
-    - name: Archive Pipeline Build
-      uses: thedoctor0/zip-release@0.7.5
-      with:
-        type: 'zip'
-        filename: releases/snapshot-${{ github.run_id }}.zip
-        exclusions: '*.git* /*node_modules/* .editorconfig phpunit.xml.dist composer.json composer.lock .wp-env.json /src/* /tests/* package.json package-lock.json /assets/*'
-    
+    - name: Generate release zip-file
+      run: |
+        npm run plugin-zip 
+        mkdir release
+        mv sams-integration.zip release/sams-integration-${{ github.run_id }}-snapshot.zip
+
     - name: Upload Pipeline Release
       uses: actions/upload-artifact@v4
       with:
-        name: Release ${{ github.run_id }} (SAMS Plugin)
-        path: releases/snapshot-${{ github.run_id }}.zip
+        name: SAMS Integration ${{ github.run_id }}
+        path: release/sams-integration-${{ github.run_id }}-snapshot.zip

@@ -13,7 +13,7 @@
     ],
 
     "config": {
-        "vendor-dir": "lib"
+        "vendor-dir": "build/lib"
     },
 
     "autoload": {
