@@ -17,11 +17,6 @@ jobs:
         tools: composer, phpunit
         extensions: simplexml
 
-    - name: Install Composer dependencies
-      run: |
-        composer install --no-dev
-        ls
-
     - name: Install Node.js
       uses: actions/setup-node@v4
       with:
@@ -33,6 +28,10 @@ jobs:
     - name: Build Javascript
       run: npm run build
     
+      # Needs to run _after_ JS build - JS build copies php files to the build-directory
+    - name: Install Composer dependencies
+      run: composer install --no-dev
+
     #- name: Manipulations for WordPress Plugin Release
     # 1. Replace generated echos by escaped output
     #  run: sed -i 's/echo \$err;/echo esc_html(\$err);/' build/lib/autoload.php
