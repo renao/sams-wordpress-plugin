@@ -32,9 +32,9 @@ jobs:
     - name: Install Composer dependencies
       run: composer install --no-dev
 
-    #- name: Manipulations for WordPress Plugin Release
+    - name: Manipulations for WordPress Plugin Release
     # 1. Replace generated echos by escaped output
-    #  run: sed -i 's/echo \$err;/echo esc_html(\$err);/' build/lib/autoload.php
+      run: sed -i 's/echo \$err;/echo esc_html(\$err);/' build/lib/autoload.php
 
     - name: Generate release zip-file
       run: |
