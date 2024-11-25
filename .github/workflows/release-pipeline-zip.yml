@@ -39,10 +39,11 @@ jobs:
     - name: Generate release zip-file
       run: |
         npm run plugin-zip 
-        mv sams-integration.zip sams-integration-${{ github.run_id }}-snapshot.zip
+        mkdir release
+        mv sams-integration.zip release/sams-integration-${{ github.run_id }}-snapshot.zip
 
     - name: Upload Pipeline Release
       uses: actions/upload-artifact@v4
       with:
         name: SAMS Integration ${{ github.run_id }}
-        path: sams-integration-${{ github.run_id }}-snapshot.zip
+        path: release/sams-integration-${{ github.run_id }}-snapshot.zip
