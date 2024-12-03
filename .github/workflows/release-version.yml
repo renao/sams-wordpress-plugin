@@ -45,7 +45,7 @@ jobs:
     - name: Parse Stable Tag from readme.txt
       id: get_version
       run: |
-        version=$(grep -Po '(?<=Stable tag: ).*' release-plugin-directory/readme.txt | xargs)
+        version=$(grep -Po '(?<=Stable tag: ).*' release-plugin-directory/trunk/readme.txt | xargs)
         echo "stable_version=$version" >> $GITHUB_ENV
 
     - name: Generate release zip-file
@@ -79,7 +79,7 @@ jobs:
         svn_dir="svn-dir"
         echo "Committing to SVN: $SVN_URL"
         svn checkout "$SVN_URL" "$svn_dir" --username "$SVN_USER" --password "$SVN_PASS" --no-auth-cache
-        rsync -a --delete "$plugin_dir/" "$svn_dir/trunk/"
+        rsync -a --delete "$plugin_dir/" "$svn_dir/"
         cd "$svn_dir"
         ls
         svn add --force .
