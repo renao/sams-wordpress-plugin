@@ -1,0 +1,106 @@
+name: Pipeline release
+
+on:
+    push:
+      branches:
+        - '**'
+    pull_request:
+    workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.3'
+        tools: composer, phpunit
+        extensions: simplexml
+
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+
+    - name: "Install JS dependencies"
+      run: npm install
+
+    - name: Build Javascript
+      run: npm run build
+
+    - name: Install Composer dependencies
+      run: composer install --no-dev
+
+    - name: Manipulations for WordPress Plugin Release
+      run: sed -i 's/echo \$err;/echo esc_html(\$err);/' build/lib/autoload.php
+
+    - name: Copy files for plugin-release directory
+      run: |
+        mkdir -p plugin-release
+        cp -R build/* plugin-release/
+
+    - name: Parse Stable Tag from readme.txt
+      id: get_version
+      run: |
+        version=$(grep -Po '(?<=Stable tag: ).*' release-plugin-directory/readme.txt | xargs)
+        echo "stable_version=$version" >> $GITHUB_ENV
+
+    - name: Generate release zip-file
+      run: |
+        npm run plugin-zip 
+        mkdir release
+        zip_name="sams-integration-${{ env.stable_version }}.zip"
+        mv sams-integration.zip release/$zip_name
+        echo "zip_name=$zip_name" >> $GITHUB_ENV
+
+    - name: Upload Pipeline Release
+      uses: actions/upload-artifact@v4
+      with:
+        name: SAMS Integration ${{ env.stable_version }}
+        path: release/${{ env.zip_name }}
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Setup SVN for Deployment
+      env:
+        SVN_URL: ${{ secrets.SVN_URL }}
+        SVN_USER: ${{ secrets.SVN_USERNAME }}
+        SVN_PASS: ${{ secrets.SVN_PASSWORD }}
+      run: |
+        plugin_dir="release-plugin-directory"
+        echo "Committing to SVN: $svn_url"
+        svn checkout "$svn_url" svn-dir
+        rsync -a --delete "$plugin_dir/" svn-dir/
+        cd svn-dir
+        svn add --force .
+        svn commit -m "Release version ${{ env.stable_version }}"
+
+    - name: Create GitHub Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v${{ env.stable_version }}
+        release_name: "SAMS Integration v${{ env.stable_version }}"
+        body: |
+          New release of SAMS Integration Plugin.
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: release/${{ env.zip_name }}
+        asset_name: ${{ env.zip_name }}
+        asset_content_type: application/zip
