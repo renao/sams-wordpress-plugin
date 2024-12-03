@@ -79,7 +79,8 @@ jobs:
         svn_dir="svn-dir"
         echo "Committing to SVN: $SVN_URL"
         svn checkout "$SVN_URL" "$svn_dir" --username "$SVN_USER" --password "$SVN_PASS" --no-auth-cache
-        rsync -a --delete "$plugin_dir/" "$svn_dir/"
+        rsync -a --delete "$plugin_dir/assets" "$svn_dir/assets"
+        rsync -a --delete "$plugin_dir/trunk" "$svn_dir/trunk"
         cd "$svn_dir"
         ls
         svn add --force .
