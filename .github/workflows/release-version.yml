@@ -76,10 +76,11 @@ jobs:
         SVN_PASS: ${{ secrets.SVN_PASSWORD }}
       run: |
         plugin_dir="release-plugin-directory"
+        svn_dir="svn-dir"
         echo "Committing to SVN: $SVN_URL"
-        svn checkout "$SVN_URL" svn-dir --username "$SVN_USER" --password "$SVN_PASS" --no-auth-cache
-        rsync -a --delete "$plugin_dir/" svn-dir/
-        cd svn-dir
+        svn checkout "$SVN_URL" "$svn_dir" --username "$SVN_USER" --password "$SVN_PASS" --no-auth-cache
+        rsync -a --delete "$plugin_dir/" "$svn_dir"/
+        cd "$svn_dir"
         svn add --force .
         svn commit -m "Release version ${{ env.stable_version }}" --username "$SVN_USER" --password "$SVN_PASS" --no-auth-cache
 
