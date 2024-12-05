@@ -90,15 +90,11 @@ jobs:
         svn info --username "$SVN_USER" --password "$SVN_PASS" --non-interactive
         echo "### END Debug SVN Info ###"
 
-        echo "### START Debug SVN Status ###"
-        svn stat
-        echo "### END Debug SVN Status ###"
-
         echo "Adding new files to SVN"
         svn add * --force
 
         echo "Committing changes to SVN"
-        svn commit -m "Release version ${{ env.stable_version }}" --username "$SVN_USER" --password "$SVN_PASS" --no-auth-cache --non-interactive
+        svn commit -m "Release version" --username "$SVN_USER" --password "$SVN_PASS" --no-auth-cache --non-interactive
 
     - name: Create GitHub Release
       uses: actions/create-release@v1
