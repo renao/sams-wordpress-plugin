@@ -69,33 +69,15 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - name: Setup SVN for Deployment
+
+    - name: SVN Deploy
+      uses: yukihiko-shinoda/action-deploy-wordpress-plugin@v2.1.1
       env:
-        SVN_URL: ${{ secrets.SVN_URL }}
-        SVN_USER: ${{ secrets.SVN_USERNAME }}
-        SVN_PASS: ${{ secrets.SVN_PASSWORD }}
-      run: |
-        plugin_dir="release-plugin-directory"
-        svn_dir="svn-dir"
+        SVN_REPOSITORY_URL: ${{ secrets.SVN_URL }}
+        SVN_USER_NAME: ${{ secrets.SVN_USERNAME }}
+        SVN_USER_PASSWORD: ${{ secrets.SVN_PASSWORD }}
 
-        echo "Checking out SVN repository: $SVN_URL"
-        svn checkout "$SVN_URL" "$svn_dir" --username "$SVN_USER" --password "$SVN_PASS" --no-auth-cache --non-interactive
-
-        echo "Synchronizing plugin files with SVN repository"
-        rsync -a --delete "$plugin_dir/assets/" "$svn_dir/assets/"
-        rsync -a --delete "$plugin_dir/trunk/" "$svn_dir/trunk/"
-
-        cd "$svn_dir"
-        echo "### START Debug SVN Info ###"
-        svn info --username "$SVN_USER" --password "$SVN_PASS" --non-interactive
-        echo "### END Debug SVN Info ###"
-
-        echo "Adding new files to SVN"
-        svn add * --force
-
-        echo "Committing changes to SVN"
-        svn commit -m "Release version" --username "$SVN_USER" --password "$SVN_PASS" --no-auth-cache --non-interactive
-
+    
     - name: Create GitHub Release
       uses: actions/create-release@v1
       env:
