@@ -84,7 +84,7 @@ jobs:
         cd "$svn_dir"
         ls
         svn add --force .
-        svn commit -m "Release version ${{ env.stable_version }}" --username "$SVN_USER" --password "$SVN_PASS" --no-auth-cache --non-interactive
+        svn commit -m "Release version ${{ env.stable_version }}" --non-interactive
 
     - name: Create GitHub Release
       uses: actions/create-release@v1
