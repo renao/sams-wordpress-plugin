@@ -75,7 +75,7 @@ jobs:
         SVN_USER: ${{ secrets.SVN_USERNAME }}
         SVN_PASS: ${{ secrets.SVN_PASSWORD }}
       run: |
-        plugin_dir="plugin-release"
+        plugin_dir="release-plugin-directory"
         svn_dir="svn-dir"
 
         echo "Checking out SVN repository: $SVN_URL"
