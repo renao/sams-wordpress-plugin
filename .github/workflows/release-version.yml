@@ -87,10 +87,15 @@ jobs:
         echo "### START Debug print svn info ###"
         svn info -r HEAD
         echo "### END Debug print svn info ###"
+
+        echo "### START Debug print svn stat ###"
+        svn stat
+        echo "### END Debug print svn stat ###"
+
         echo "Committing to SVN: $SVN_URL"
         
         svn add --force .
-        svn commit -m "Release version ${{ env.stable_version }}" --non-interactive
+        svn commit -m "Release version ${{ env.stable_version }}"
 
     - name: Create GitHub Release
       uses: actions/create-release@v1
