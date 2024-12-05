@@ -94,7 +94,7 @@ jobs:
 
         echo "Committing to SVN"
         
-        svn add .
+        svn add * --force
         svn commit -m "Release version ${{ env.stable_version }}"
 
     - name: Create GitHub Release
