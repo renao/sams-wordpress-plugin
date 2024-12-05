@@ -92,9 +92,9 @@ jobs:
         svn stat
         echo "### END Debug print svn stat ###"
 
-        echo "Committing to SVN: $SVN_URL"
+        echo "Committing to SVN"
         
-        svn add --force .
+        svn add .
         svn commit -m "Release version ${{ env.stable_version }}"
 
     - name: Create GitHub Release
