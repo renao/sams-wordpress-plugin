@@ -72,8 +72,8 @@ jobs:
 
     - name: Prepare release folder
       env:
-        BUILD_DIR: "build"
-        RELEASE_TRUNK_DIR: "release-plugin-directory/trunk"
+        BUILD_DIR: "./build"
+        RELEASE_TRUNK_DIR: "./release-plugin-directory/trunk"
       run: |
         cp -r "$BUILD_DIR" "$RELEASE_TRUNK_DIR"
         cp sams-integration.php "$RELEASE_TRUNK_DIR"
