@@ -1,4 +1,4 @@
-name: Pipeline release
+name: Release Pipeline
 
 on:
     push:
@@ -64,38 +64,24 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    # needs: build
+    needs: build
     if: github.ref == 'refs/heads/main'
     steps:
     - uses: actions/checkout@master
 
 
-    - name: SVN Deploy
-      uses: yukihiko-shinoda/action-deploy-wordpress-plugin@v2.1.1
+    - name: Prepare release folder
       env:
-        SVN_REPOSITORY_URL: ${{ secrets.SVN_URL }}
-        SVN_USER_NAME: ${{ secrets.SVN_USERNAME }}
-        SVN_USER_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+        BUILD_DIR: "build"
+        RELEASE_TRUNK_DIR: "release-plugin-directory/trunk"
+      run: |
+        cp -r "$BUILD_DIR" "$RELEASE_TRUNK_DIR"
+        cp sams-integration.php "$RELEASE_TRUNK_DIR"
+        echo "Copied files to release trunk"
 
-    
-    - name: Create GitHub Release
-      uses: actions/create-release@v1
+    - name: Release
+      uses: fnkr/github-action-ghr@v1
       env:
+        GHR_COMPRESS: zip
+        GHR_PATH: release-plugin-directory/trunk
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: v${{ env.stable_version }}
-        release_name: "SAMS Integration v${{ env.stable_version }}"
-        body: |
-          New release of SAMS Integration Plugin.
-        draft: false
-        prerelease: false
-
-    - name: Upload Release Asset
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: release/${{ env.zip_name }}
-        asset_name: ${{ env.zip_name }}
-        asset_content_type: application/zip
