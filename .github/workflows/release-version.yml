@@ -39,8 +39,8 @@ jobs:
 
     - name: Copy files for plugin-release directory
       run: |
-        mkdir -p plugin-release
-        cp -R build/* plugin-release/
+        cp -R build/* release-plugin-directory/trunk
+        cp sams-integration.php release-plugin-directory/trunk
 
     - name: Parse Stable Tag from readme.txt
       id: get_version
@@ -50,36 +50,19 @@ jobs:
 
     - name: Generate release zip-file
       run: |
-        npm run plugin-zip 
-        mkdir release
+        npm run plugin-zip
         zip_name="sams-integration-${{ env.stable_version }}.zip"
-        mv sams-integration.zip release/$zip_name
+        mv sams-integration.zip $zip_name
         echo "zip_name=$zip_name" >> $GITHUB_ENV
 
     - name: Upload Pipeline Release
       uses: actions/upload-artifact@v4
       with:
         name: SAMS Integration ${{ env.stable_version }}
-        path: release/${{ env.zip_name }}
+        path: ${{ env.zip_name }}
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    if: github.ref == 'refs/heads/main'
-    steps:
-    - uses: actions/checkout@master
-
-
-    - name: Prepare release folder
-      env:
-        BUILD_DIR: "./build"
-        RELEASE_TRUNK_DIR: "./release-plugin-directory/trunk"
-      run: |
-        cp -r "$BUILD_DIR" "$RELEASE_TRUNK_DIR"
-        cp sams-integration.php "$RELEASE_TRUNK_DIR"
-        echo "Copied files to release trunk"
-
-    - name: Release
+    - name: Create Release on GitHub
+      if: github.ref == 'refs/heads/main'
       uses: fnkr/github-action-ghr@v1
       env:
         GHR_COMPRESS: zip
